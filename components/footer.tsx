@@ -83,44 +83,36 @@ export function Footer() {
                   Technology Integration
                 </Link>
               </li>
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h3 className="font-bold text-gray-900 mb-4">Legal</h3>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/terms" className="text-gray-700 hover:text-teal-600">
+                <Link href="/legal" className="text-gray-700 hover:text-teal-600">
+                  All Legal Documents
+                </Link>
+              </li>
+              <li>
+                <Link href="/legal/terms" className="text-gray-700 hover:text-teal-600">
                   Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-700 hover:text-teal-600">
+                <Link href="/legal/privacy" className="text-gray-700 hover:text-teal-600">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/cookie-policy" className="text-gray-700 hover:text-teal-600">
+                <Link href="/legal/cookie-policy" className="text-gray-700 hover:text-teal-600">
                   Cookie Policy
                 </Link>
               </li>
               <li>
-                <Link href="/disclaimer" className="text-gray-700 hover:text-teal-600">
-                  Disclaimer
-                </Link>
-              </li>
-              <li>
-                <Link href="/data-protection" className="text-gray-700 hover:text-teal-600">
+                <Link href="/legal/data-protection" className="text-gray-700 hover:text-teal-600">
                   Data Protection
-                </Link>
-              </li>
-              <li>
-                <Link href="/acceptable-use-policy" className="text-gray-700 hover:text-teal-600">
-                  Acceptable Use
-                </Link>
-              </li>
-              <li>
-                <Link href="/accessibility-statement" className="text-gray-700 hover:text-teal-600">
-                  Accessibility
-                </Link>
-              </li>
-              <li>
-                <Link href="/refund-policy" className="text-gray-700 hover:text-teal-600">
-                  Refund Policy
                 </Link>
               </li>
             </ul>
