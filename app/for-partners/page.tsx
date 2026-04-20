@@ -63,9 +63,9 @@ export default function ForPartnersPage() {
                   <p className="text-green-800 mb-4">
                     Or call our office to verify your organisation and arrange access:
                   </p>
-                  <a href="tel:+18459047626" className="inline-block">
+                  <a href="tel:+443333355520" className="inline-block">
                     <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full">
-                      Call +1 (845) 904-7626
+                      Call +44 (0)333 335 5520
                     </Button>
                   </a>
                 </div>

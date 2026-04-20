@@ -109,10 +109,10 @@ export default function LegalHub() {
               Email Us
             </a>
             <a
-              href="tel:+18459047626"
+              href="tel:+443333355520"
               className="px-6 py-3 bg-white border-2 border-teal-600 text-teal-600 rounded-lg hover:bg-teal-50 transition-colors text-center font-medium"
             >
-              Call +1 (845) 904-7626
+              Call +44 (0)333 335 5520
             </a>
           </div>
         </div>

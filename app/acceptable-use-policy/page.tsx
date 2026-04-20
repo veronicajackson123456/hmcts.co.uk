@@ -104,7 +104,7 @@ export default function AcceptableUsePolicyPage() {
 
             <p className="text-gray-700 leading-relaxed mb-6">
               If you become aware of any violation of this Policy, please report it to us immediately at
-              <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a>. We will investigate all reports and take appropriate action.
+              <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">hotelmanagement@hmcts.co.uk</a>. We will investigate all reports and take appropriate action.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Consequences of Violation</h2>

@@ -52,11 +52,12 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">General Enquiries</h3>
                 <a
-                  href="mailto:info@hmcts.co.uk"
+                  href="mailto:hotelmanagement@hmcts.co.uk"
                   className="text-sm text-blue-600 hover:underline break-all"
                 >
-                  info@hmcts.co.uk
+                  hotelmanagement@hmcts.co.uk
                 </a>
+                <p className="text-xs text-gray-600 mt-1">or <a href="mailto:info@hmcts.co.uk" className="hover:underline">info@hmcts.co.uk</a></p>
               </div>
 
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center border border-blue-200">
@@ -77,8 +78,8 @@ export default function ContactPage() {
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Call Us</h3>
-                <a href="tel:+18459047626" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
-                  +1 (845) 904-7626
+                <a href="tel:+443333355520" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
+                  +44 (0)333 335 5520
                 </a>
                 <p className="text-xs text-gray-600 mt-1">Mon–Fri 09:00–17:00</p>
               </div>

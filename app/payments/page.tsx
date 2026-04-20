@@ -229,7 +229,7 @@ export default function PaymentsPage() {
               </p>
               <div className="space-y-3 mb-6">
                 <p className="text-gray-900"><span className="font-semibold">Email:</span> <a href="mailto:finance@hmcts.co.uk" className="text-blue-600 hover:underline">finance@hmcts.co.uk</a></p>
-                <p className="text-gray-900"><span className="font-semibold">Phone:</span> <a href="tel:+18459047626" className="text-blue-600 hover:underline">+1 (845) 904-7626</a></p>
+                <p className="text-gray-900"><span className="font-semibold">Phone:</span> <a href="tel:+443333355520" className="text-blue-600 hover:underline">+44 (0)333 335 5520</a></p>
                 <p className="text-gray-700 text-sm">Mon–Fri 09:00–17:00</p>
               </div>
               <Link href="/contact">

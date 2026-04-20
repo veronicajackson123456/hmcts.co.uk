@@ -181,10 +181,10 @@ export default function SecurityPage() {
                   <span className="font-semibold">Email:</span> <a href="mailto:dpo@hmcts.co.uk" className="text-blue-600 hover:underline">dpo@hmcts.co.uk</a>
                 </p>
                 <p className="text-gray-900">
-                  <span className="font-semibold">General Contact:</span> <a href="mailto:info@hmcts.co.uk" className="text-blue-600 hover:underline">info@hmcts.co.uk</a>
+                  <span className="font-semibold">General Contact:</span> <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-blue-600 hover:underline">hotelmanagement@hmcts.co.uk</a>
                 </p>
                 <p className="text-gray-900">
-                  <span className="font-semibold">Phone:</span> <a href="tel:+18459047626" className="text-blue-600 hover:underline">+1 (845) 904-7626</a>
+                  <span className="font-semibold">Phone:</span> <a href="tel:+443333355520" className="text-blue-600 hover:underline">+44 (0)333 335 5520</a>
                 </p>
               </div>
             </div>

@@ -28,7 +28,7 @@ export default function DataProtectionPage() {
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <p className="text-gray-700 mb-2">
-                <strong>General Enquiries:</strong> <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a>
+                <strong>General Enquiries:</strong> <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">hotelmanagement@hmcts.co.uk</a> or <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a>
               </p>
               <p className="text-gray-700 mb-2">
                 <strong>Finance Enquiries:</strong> <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a>
@@ -37,7 +37,7 @@ export default function DataProtectionPage() {
                 <strong>Compliance & Verification:</strong> <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">partners@hmcts.co.uk</a>
               </p>
               <p className="text-gray-700">
-                <strong>Phone:</strong> <a href="tel:+18459047626" className="text-teal-600 hover:text-teal-700">+1 (845) 904-7626</a>
+                <strong>Phone:</strong> <a href="tel:+443333355520" className="text-teal-600 hover:text-teal-700">+44 (0)333 335 5520</a>
               </p>
             </div>
 

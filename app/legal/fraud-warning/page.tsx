@@ -205,7 +205,7 @@ export default function FraudWarningPage() {
                     <Phone className="w-5 h-5 text-teal-600 mt-1 shrink-0" />
                     <div>
                       <p className="font-bold">Corporate Phone:</p>
-                      <a href="tel:+18459047626" className="text-teal-600 hover:underline">+1 (845) 904-7626</a>
+                      <a href="tel:+443333355520" className="text-teal-600 hover:underline">+44 (0)333 335 5520</a>
                       <p className="text-sm text-gray-600">Mon–Fri 09:00–17:00</p>
                     </div>
                   </div>
