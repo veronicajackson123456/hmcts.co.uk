@@ -87,7 +87,7 @@ export default function PaymentsPage() {
                     </div>
                     <div>
                       <p className="text-sm text-gray-600 font-semibold">Issued By</p>
-                      <p className="text-gray-900">HMCTS Ltd</p>
+                      <p className="text-gray-900">HMCTS LLC</p>
                     </div>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default function PaymentsPage() {
               <div className="border-2 border-gray-300 rounded-xl p-12 bg-white shadow-lg">
                 <div className="mb-8 pb-8 border-b border-gray-300">
                   <p className="text-sm text-gray-600 font-semibold mb-2">SAMPLE INVOICE (For Reference)</p>
-                  <h3 className="text-2xl font-bold text-gray-900">HMCTS Ltd</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">HMCTS LLC</h3>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8 mb-8">

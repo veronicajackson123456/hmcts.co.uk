@@ -136,7 +136,7 @@ export default function SecurityPage() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Data Controller</h3>
                   <p className="text-gray-700">
-                    HMCTS Ltd is the data controller for all personal data processed during our engagement with you.
+                    HMCTS LLC is the data controller for all personal data processed during our engagement with you.
                   </p>
                 </div>
                 <div>

@@ -101,7 +101,7 @@ export default function AcceptableUsePolicyPage() {
                 If you become aware of any violation of this Acceptable Use Policy, please report it to us immediately at:
               </p>
               <div className="mt-4 p-4 bg-gray-100 rounded-lg">
-                <p className="font-semibold">HMCTS Ltd — Hotel Management Consultants & Training Specialists</p>
+                <p className="font-semibold">HMCTS LLC — Hotel Management Consultants & Training Specialists</p>
                 <p>General Enquiries: <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">hotelmanagement@hmcts.co.uk</a> or <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a></p>
                 <p>Finance Enquiries: <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a></p>
                 <p>Compliance & Verification: <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">partners@hmcts.co.uk</a></p>

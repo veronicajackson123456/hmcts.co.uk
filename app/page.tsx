@@ -78,7 +78,7 @@ export default function HomePage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">HMCTS — Hotel Management Consultants & Training Specialists</h2>
               <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
               <div>
-                  <p className="mb-2"><span className="font-semibold">Registered company:</span> HMCTS Ltd</p>
+                  <p className="mb-2"><span className="font-semibold">Registered company:</span> HMCTS LLC</p>
                   <p className="mb-2"><span className="font-semibold">UK Company Registration:</span> SR 20243712436</p>
                   <p className="mb-2"><span className="font-semibold">US EIN:</span> 37-2155102</p>
                   <p className="mb-2"><span className="font-semibold">UK Office:</span> 84 Swinton Hall Road, Swinton Manchester M27 4BJ</p>

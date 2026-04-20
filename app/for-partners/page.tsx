@@ -235,7 +235,7 @@ export default function ForPartnersPage() {
                 <div>
                   <h2 className="text-4xl font-bold text-gray-900 mb-6">Company Verification</h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    HMCTS Ltd is a registered company with full compliance and audit trails. Here's what you should know:
+                    HMCTS LLC is a registered company with full compliance and audit trails. Here's what you should know:
                   </p>
                 </div>
 
@@ -245,7 +245,7 @@ export default function ForPartnersPage() {
                     <div className="grid md:grid-cols-2 gap-6 text-blue-900">
                       <div>
                         <p className="text-sm font-semibold text-blue-700 mb-1">Legal Name</p>
-                        <p className="text-lg font-semibold">HMCTS Ltd</p>
+                        <p className="text-lg font-semibold">HMCTS LLC</p>
                       </div>
                       <div>
                         <p className="text-sm font-semibold text-blue-700 mb-1">Company Number</p>

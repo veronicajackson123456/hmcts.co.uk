@@ -167,14 +167,14 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-300">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-gray-600">
-              <p className="font-semibold text-gray-900">HMCTS Ltd</p>
+              <p className="font-semibold text-gray-900">HMCTS LLC</p>
               <p className="text-xs">UK: SR 20243712436 | US: EIN 37-2155102</p>
               <p className="text-xs">UK Office: 84 Swinton Hall Road, Swinton Manchester M27 4BJ</p>
               <p className="text-xs">US Office: 131 Continental Drive, ste 305, Newark, Delaware 19713 USA</p>
               <p className="text-xs mt-1">Email: <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-teal-600 hover:underline">hotelmanagement@hmcts.co.uk</a> | Phone: <a href="tel:+443333355520" className="text-teal-600 hover:underline">+44 (0)333 335 5520</a></p>
             </div>
             <p className="text-sm text-gray-600 text-center">
-              © 2025 HMCTS Ltd. All rights reserved.
+              © 2025 HMCTS LLC. All rights reserved.
             </p>
           </div>
         </div>
