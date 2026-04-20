@@ -51,12 +51,12 @@ export default function ContactPage() {
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Email Us</h3>
-                <a
-                  href="mailto:info@hospitalitysoftwaresolutions.com"
-                  className="text-sm text-blue-600 hover:underline break-all"
-                >
-                  info@hospitalitysoftwaresolutions.com
-                </a>
+            <a
+              href="tel:+441234567890"
+              className="px-6 py-3 bg-white border-2 border-teal-600 text-teal-600 rounded-lg hover:bg-teal-50 transition-colors text-center font-medium"
+            >
+              Call +44 (0) 123 456 7890
+            </a>
               </div>
 
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center border border-orange-200">
@@ -64,10 +64,10 @@ export default function ContactPage() {
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Call Us</h3>
-                <a href="tel:+15551234567" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
-                  +1 (555) 123-4567
+                <a href="tel:+441234567890" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
+                  +44 (0) 123 456 7890
                 </a>
-                <p className="text-xs text-gray-600 mt-1">24/7 Support Available</p>
+                <p className="text-xs text-gray-600 mt-1">Mon–Fri 09:00–17:00</p>
               </div>
 
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center border border-purple-200">

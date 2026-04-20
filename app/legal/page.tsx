@@ -26,6 +26,16 @@ export default function LegalHub() {
       href: '/legal/data-protection',
     },
     {
+      title: 'AML / CTF Policy',
+      description: 'Anti-Money Laundering and Counter-Terrorist Financing compliance',
+      href: '/legal/aml-ctf-policy',
+    },
+    {
+      title: 'Fraud Warning & Payment Verification',
+      description: 'Official guidance on communication channels and payment verification procedures',
+      href: '/legal/fraud-warning',
+    },
+    {
       title: 'Disclaimer',
       description: 'Important disclaimers and liability limitations',
       href: '/legal/disclaimer',

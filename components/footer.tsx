@@ -124,25 +124,25 @@ export function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
-                <a href="mailto:info@hospitalitysoftwaresolutions.com" className="text-gray-700 hover:text-teal-600">
-                  info@hospitalitysoftwaresolutions.com
+                <a href="mailto:info@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
+                  info@hmcts.co.uk
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+18459047626" className="text-gray-700 hover:text-teal-600">
-                    +1 (845) 904-7626
+                  <a href="tel:+441234567890" className="text-gray-700 hover:text-teal-600">
+                    +44 (0) 123 456 7890
                   </a>
-                  <p className="text-gray-600 text-xs mt-1">24/7 Support Available</p>
+                  <p className="text-gray-600 text-xs mt-1">Mon–Fri 09:00–17:00</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
                 <address className="text-gray-700 not-italic">
-                  30 N GOULD STREET SHERIDAN
+                  HMCTS Ltd
                   <br />
-                  WYOMING 82801 USA
+                  United Kingdom
                 </address>
               </li>
             </ul>
@@ -152,13 +152,12 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-300">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-sm">
-              <span className="text-gray-600">Proud Partner of</span>
-              <span className="font-bold text-gray-900">Cloudbeds</span>
+            <div className="text-sm text-gray-600">
+              <p className="font-semibold text-gray-900">HMCTS Ltd — Hotel Management Consultants & Training Specialists</p>
+              <p className="text-xs">For verification: contact <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:underline">partners@hmcts.co.uk</a></p>
             </div>
             <p className="text-sm text-gray-600 text-center">
-              © 2025 HMCTS LLC- Hospitality Management Consultancy & Technology Solutions. EIN: 37-2155102. All rights
-              reserved.
+              © 2025 HMCTS Ltd. All rights reserved.
             </p>
           </div>
         </div>
