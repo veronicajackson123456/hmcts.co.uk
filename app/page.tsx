@@ -90,6 +90,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </section>
+
         <section className="py-20 bg-gradient-to-b from-emerald-50 to-white">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">
