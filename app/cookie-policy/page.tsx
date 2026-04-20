@@ -109,7 +109,7 @@ export default function CookiePolicyPage() {
 
             <p className="text-gray-700 leading-relaxed">
               If you have questions about this Cookie Policy or our use of cookies, please contact us at
-              info@hospitalitysoftwaresolutions.com or call +1 (845) 904-7626.
+              <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a> (General) or <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a> (Finance), or call <a href="tel:+18459047626" className="text-teal-600 hover:text-teal-700">+1 (845) 904-7626</a>.
             </p>
           </div>
         </div>

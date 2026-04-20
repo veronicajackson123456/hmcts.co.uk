@@ -28,13 +28,16 @@ export default function DataProtectionPage() {
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <p className="text-gray-700 mb-2">
-                <strong>Email:</strong> info@hospitalitysoftwaresolutions.com
+                <strong>General Enquiries:</strong> <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a>
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>Phone:</strong> +1 (845) 904-7626
+                <strong>Finance Enquiries:</strong> <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a>
+              </p>
+              <p className="text-gray-700 mb-2">
+                <strong>Compliance & Verification:</strong> <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">partners@hmcts.co.uk</a>
               </p>
               <p className="text-gray-700">
-                <strong>Address:</strong> 30 N GOULD STREET SHERIDAN, WYOMING 82801 USA
+                <strong>Phone:</strong> <a href="tel:+18459047626" className="text-teal-600 hover:text-teal-700">+1 (845) 904-7626</a>
               </p>
             </div>
 

@@ -124,26 +124,39 @@ export function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
-                <a href="mailto:info@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
-                  info@hmcts.co.uk
-                </a>
+                <div>
+                  <p className="text-gray-600 text-xs mb-1">General Enquiries</p>
+                  <a href="mailto:info@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
+                    info@hmcts.co.uk
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-600 text-xs mb-1">Finance Enquiries</p>
+                  <a href="mailto:finance@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
+                    finance@hmcts.co.uk
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-600 text-xs mb-1">Compliance & Verification</p>
+                  <a href="mailto:partners@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
+                    partners@hmcts.co.uk
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+441234567890" className="text-gray-700 hover:text-teal-600">
-                    +44 (0) 123 456 7890
+                  <a href="tel:+18459047626" className="text-gray-700 hover:text-teal-600 font-medium">
+                    +1 (845) 904-7626
                   </a>
                   <p className="text-gray-600 text-xs mt-1">Mon–Fri 09:00–17:00</p>
                 </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
-                <address className="text-gray-700 not-italic">
-                  HMCTS Ltd
-                  <br />
-                  United Kingdom
-                </address>
               </li>
             </ul>
           </div>
@@ -154,7 +167,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-gray-600">
               <p className="font-semibold text-gray-900">HMCTS Ltd — Hotel Management Consultants & Training Specialists</p>
-              <p className="text-xs">For verification: contact <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:underline">partners@hmcts.co.uk</a></p>
+              <p className="text-xs">For verification: contact <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:underline">partners@hmcts.co.uk</a> | Phone: <a href="tel:+18459047626" className="text-teal-600 hover:underline">+1 (845) 904-7626</a></p>
             </div>
             <p className="text-sm text-gray-600 text-center">
               © 2025 HMCTS Ltd. All rights reserved.

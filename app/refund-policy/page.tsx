@@ -67,7 +67,7 @@ export default function RefundPolicyPage() {
 
             <ol className="list-decimal pl-6 mb-6 space-y-3 text-gray-700">
               <li className="leading-relaxed">
-                Contact us at info@hospitalitysoftwaresolutions.com with your order number and reason for return
+                Contact us at <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a> with your order number and reason for return
               </li>
               <li className="leading-relaxed">
                 Obtain a return authorization number from us
@@ -158,7 +158,13 @@ export default function RefundPolicyPage() {
 
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <p className="text-gray-700">
-                <strong>Contact:</strong> info@hospitalitysoftwaresolutions.com
+                <strong>General Enquiries:</strong> <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a>
+              </p>
+              <p className="text-gray-700">
+                <strong>Finance Enquiries:</strong> <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a>
+              </p>
+              <p className="text-gray-700">
+                <strong>Phone:</strong> <a href="tel:+18459047626" className="text-teal-600 hover:text-teal-700">+1 (845) 904-7626</a>
               </p>
             </div>
 

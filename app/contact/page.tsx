@@ -50,13 +50,26 @@ export default function ContactPage() {
                 <div className="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Email Us</h3>
-            <a
-              href="tel:+441234567890"
-              className="px-6 py-3 bg-white border-2 border-teal-600 text-teal-600 rounded-lg hover:bg-teal-50 transition-colors text-center font-medium"
-            >
-              Call +44 (0) 123 456 7890
-            </a>
+                <h3 className="font-bold text-lg mb-2">General Enquiries</h3>
+                <a
+                  href="mailto:info@hmcts.co.uk"
+                  className="text-sm text-blue-600 hover:underline break-all"
+                >
+                  info@hmcts.co.uk
+                </a>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center border border-blue-200">
+                <div className="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Mail className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="font-bold text-lg mb-2">Finance Enquiries</h3>
+                <a
+                  href="mailto:finance@hmcts.co.uk"
+                  className="text-sm text-blue-600 hover:underline break-all"
+                >
+                  finance@hmcts.co.uk
+                </a>
               </div>
 
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 text-center border border-orange-200">
@@ -64,28 +77,23 @@ export default function ContactPage() {
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Call Us</h3>
-                <a href="tel:+441234567890" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
-                  +44 (0) 123 456 7890
+                <a href="tel:+18459047626" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
+                  +1 (845) 904-7626
                 </a>
                 <p className="text-xs text-gray-600 mt-1">Mon–Fri 09:00–17:00</p>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center border border-purple-200">
-                <div className="w-14 h-14 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Visit Us</h3>
-                <p className="text-sm text-gray-700">Global Hospitality Solutions</p>
-                <p className="text-xs text-gray-600 mt-1">Worldwide Service</p>
-              </div>
-
               <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-6 text-center border border-teal-200">
                 <div className="w-14 h-14 bg-teal-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-7 h-7 text-white" />
+                  <Mail className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Working Hours</h3>
-                <p className="text-sm text-gray-700">Mon - Fri: 9:00 AM - 6:00 PM</p>
-                <p className="text-xs text-gray-600 mt-1">Weekend: By Appointment</p>
+                <h3 className="font-bold text-lg mb-2">Compliance</h3>
+            <a
+              href="tel:+18459047626"
+              className="px-6 py-3 bg-white border-2 border-teal-600 text-teal-600 rounded-lg hover:bg-teal-50 transition-colors text-center font-medium"
+            >
+              Call +1 (845) 904-7626
+            </a>
               </div>
             </div>
 

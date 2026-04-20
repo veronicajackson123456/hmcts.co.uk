@@ -103,7 +103,7 @@ export default function LegalHub() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:info@hospitalitysoftwaresolutions.com"
+              href="mailto:info@hmcts.co.uk"
               className="px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors text-center font-medium"
             >
               Email Us

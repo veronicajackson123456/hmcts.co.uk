@@ -106,7 +106,7 @@ export default function AMLCTFPolicyPage() {
 
               <h3>Compliance Enquiries</h3>
               <p>
-                For questions regarding this AML/CTF Policy, please contact our Compliance team at <a href="mailto:partners@hmcts.co.uk">partners@hmcts.co.uk</a> or call <a href="tel:+441234567890">+44 (0) 123 456 7890</a>.
+                For questions regarding this AML/CTF Policy, please contact our Compliance team at <a href="mailto:partners@hmcts.co.uk">partners@hmcts.co.uk</a> or call <a href="tel:+18459047626">+1 (845) 904-7626</a>.
               </p>
 
               <p className="text-sm text-gray-600 mt-8 pt-8 border-t border-gray-200">
