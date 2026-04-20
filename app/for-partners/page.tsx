@@ -7,11 +7,6 @@ import { CheckCircle, Lock, BarChart3, FileText, ArrowRight } from "lucide-react
 import Link from "next/link"
 import { useState } from "react"
 
-export const metadata = {
-  title: "For Banks & Partners | HMCTS | Compliance Hub",
-  description: "Compliance documentation, verification, and partnership information for financial institutions and business partners.",
-}
-
 export default function ForPartnersPage() {
   const [activeTab, setActiveTab] = useState<"compliance" | "verification" | "partnership">("compliance")
 
