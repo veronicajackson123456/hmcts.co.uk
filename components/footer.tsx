@@ -124,26 +124,40 @@ export function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
-                <a href="mailto:info@hospitalitysoftwaresolutions.com" className="text-gray-700 hover:text-teal-600">
-                  info@hospitalitysoftwaresolutions.com
-                </a>
+                <div>
+                  <p className="text-gray-600 text-xs mb-1">General Enquiries</p>
+                  <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
+                    hotelmanagement@hmcts.co.uk
+                  </a>
+                  <p className="text-gray-600 text-xs mt-1">or <a href="mailto:info@hmcts.co.uk" className="hover:text-teal-600">info@hmcts.co.uk</a></p>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-600 text-xs mb-1">Finance Enquiries</p>
+                  <a href="mailto:finance@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
+                    finance@hmcts.co.uk
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-gray-600 text-xs mb-1">Compliance & Verification</p>
+                  <a href="mailto:partners@hmcts.co.uk" className="text-gray-700 hover:text-teal-600">
+                    partners@hmcts.co.uk
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
                 <div>
-                  <a href="tel:+18459047626" className="text-gray-700 hover:text-teal-600">
-                    +1 (845) 904-7626
+                  <a href="tel:+443333355520" className="text-gray-700 hover:text-teal-600 font-medium">
+                    +44 (0)333 335 5520
                   </a>
-                  <p className="text-gray-600 text-xs mt-1">24/7 Support Available</p>
+                  <p className="text-gray-600 text-xs mt-1">Mon–Fri 09:00–17:00</p>
                 </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-orange-500 shrink-0 mt-0.5" />
-                <address className="text-gray-700 not-italic">
-                  30 N GOULD STREET SHERIDAN
-                  <br />
-                  WYOMING 82801 USA
-                </address>
               </li>
             </ul>
           </div>
@@ -152,13 +166,15 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-300">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-sm">
-              <span className="text-gray-600">Proud Partner of</span>
-              <span className="font-bold text-gray-900">Cloudbeds</span>
+            <div className="text-sm text-gray-600">
+              <p className="font-semibold text-gray-900">HMCTS LLC</p>
+              <p className="text-xs">UK: SR 20243712436 | US: EIN 37-2155102</p>
+              <p className="text-xs">UK Office: 84 Swinton Hall Road, Swinton Manchester M27 4BJ</p>
+              <p className="text-xs">US Office: 131 Continental Drive, ste 305, Newark, Delaware 19713 USA</p>
+              <p className="text-xs mt-1">Email: <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-teal-600 hover:underline">hotelmanagement@hmcts.co.uk</a> | Phone: <a href="tel:+443333355520" className="text-teal-600 hover:underline">+44 (0)333 335 5520</a></p>
             </div>
             <p className="text-sm text-gray-600 text-center">
-              © 2025 HMCTS LLC- Hospitality Management Consultancy & Technology Solutions. EIN: 37-2155102. All rights
-              reserved.
+              © 2025 HMCTS LLC. All rights reserved.
             </p>
           </div>
         </div>

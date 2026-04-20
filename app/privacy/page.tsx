@@ -115,9 +115,23 @@ export default function PrivacyPage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Changes to This Privacy Policy</h2>
 
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed mb-8">
               We may update this Privacy Policy from time to time. Use of the Site means you accept the changes.
             </p>
+
+            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Contact Us</h2>
+
+            <p className="text-gray-700 leading-relaxed mb-4">
+              If you have any questions about this Privacy Policy, please contact us:
+            </p>
+
+            <div className="mt-4 p-4 bg-gray-100 rounded-lg">
+              <p className="font-semibold">HMCTS LLC — Hotel Management Consultants & Training Specialists</p>
+              <p>General Enquiries: <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">hotelmanagement@hmcts.co.uk</a> or <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a></p>
+              <p>Finance Enquiries: <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a></p>
+              <p>Compliance & Verification: <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">partners@hmcts.co.uk</a></p>
+              <p>Phone: <a href="tel:+443333355520" className="text-teal-600 hover:text-teal-700">+44 (0)333 335 5520</a></p>
+            </div>
           </div>
         </div>
       </main>

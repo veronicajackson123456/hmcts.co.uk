@@ -2,7 +2,13 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Server, TrendingUp, Workflow, Star, GraduationCap, Building2, Headphones, Settings } from "lucide-react"
+import { CheckCircle, TrendingUp, Users, Shield, ArrowRight } from "lucide-react"
+import Link from "next/link"
+
+export const metadata = {
+  title: "Our Services | HMCTS | Hotel Management Consulting & Training",
+  description: "Consultancy, training, interim management, and audits for hospitality businesses.",
+}
 
 export default function ServicesPage() {
   return (
@@ -11,17 +17,16 @@ export default function ServicesPage() {
 
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-emerald-50 to-white py-16">
+        <section className="bg-gradient-to-b from-teal-50 to-white py-16">
           <div className="container mx-auto px-4 max-w-6xl text-center">
-            <Badge className="mb-6 bg-emerald-100 text-emerald-700 border-emerald-300 rounded-full px-4 py-2">
+            <Badge className="mb-6 bg-teal-100 text-teal-700 border-teal-300 rounded-full px-4 py-2">
               Our Services
             </Badge>
             <h1 className="text-5xl font-bold mb-4 text-balance">
-              Comprehensive <span className="text-teal-600">Hospitality Solutions</span>
+              Consulting, Training, <span className="text-teal-600">& Management Support</span>
             </h1>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              From consultation to implementation, we provide end-to-end solutions to help your hospitality business
-              thrive in today's competitive market.
+              From operational audits to interim leadership, we deliver bespoke solutions tailored to your hospitality business.
             </p>
           </div>
         </section>
@@ -29,195 +34,254 @@ export default function ServicesPage() {
         {/* Core Services */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Consultation Services */}
-              <div className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-2xl p-10 border border-teal-200 hover:shadow-xl transition">
-                <div className="w-16 h-16 bg-teal-500 rounded-2xl flex items-center justify-center mb-6">
-                  <Headphones className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Consultation Services</h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Expert guidance to help you choose the right technology solutions for your property. We analyze your
-                  operations and recommend tailored solutions.
-                </p>
-                <ul className="space-y-3">
-                  {[
-                    "Property needs assessment",
-                    "Technology stack recommendations",
-                    "Budget planning and ROI analysis",
-                    "Implementation roadmap",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm text-gray-700">
-                      <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-                      {item}
+            <div className="space-y-16">
+              {/* Consultancy */}
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-4xl font-bold mb-6 text-gray-900">Consultancy</h2>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Our consultancy services help you diagnose operational challenges, develop sustainable solutions, and position your hotel for growth.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-teal-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Operational Audits</p>
+                        <p className="text-sm text-gray-600">Comprehensive assessment of systems, processes, and performance.</p>
+                      </div>
                     </li>
-                  ))}
-                </ul>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-teal-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">SOP Development</p>
+                        <p className="text-sm text-gray-600">Bespoke standard operating procedures for consistency and quality.</p>
+                      </div>
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-teal-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Pre-Opening Management</p>
+                        <p className="text-sm text-gray-600">From concept to launch—we manage every operational detail.</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link href="/contact">
+                    <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full flex items-center gap-2">
+                      Discuss Your Needs
+                      <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
+                <div className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-2xl p-10 border border-teal-200 h-full">
+                  <div className="space-y-6">
+                    <div className="p-4 bg-white rounded-lg border border-teal-100">
+                      <p className="font-semibold text-gray-900 mb-1">Revenue Optimisation</p>
+                      <p className="text-sm text-gray-600">Unlock new revenue streams and improve profitability.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-teal-100">
+                      <p className="font-semibold text-gray-900 mb-1">Staff Structure Review</p>
+                      <p className="text-sm text-gray-600">Optimal team configurations for your property size and market.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-teal-100">
+                      <p className="font-semibold text-gray-900 mb-1">Quality Assurance</p>
+                      <p className="text-sm text-gray-600">Consistent delivery of guest and operational standards.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              {/* Training & Certification */}
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-10 border border-purple-200 hover:shadow-xl transition">
-                <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6">
-                  <GraduationCap className="w-8 h-8 text-white" />
+              {/* Training */}
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-10 border border-purple-200 h-full order-2 md:order-1">
+                  <div className="space-y-6">
+                    <div className="p-4 bg-white rounded-lg border border-purple-100">
+                      <p className="font-semibold text-gray-900 mb-1">Front-of-House Excellence</p>
+                      <p className="text-sm text-gray-600">Guest service, communication, and problem-solving skills.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-purple-100">
+                      <p className="font-semibold text-gray-900 mb-1">Housekeeping & Facilities</p>
+                      <p className="text-sm text-gray-600">Standards, efficiency, and equipment operation.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-purple-100">
+                      <p className="font-semibold text-gray-900 mb-1">Revenue & Leadership</p>
+                      <p className="text-sm text-gray-600">Management skills, commercial acumen, and team development.</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Training & Certification</h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Comprehensive training programs to ensure your team can maximize the potential of your new systems and
-                  deliver exceptional service.
-                </p>
-                <ul className="space-y-3">
-                  {[
-                    "On-site and remote training sessions",
-                    "Staff certification programs",
-                    "Custom training materials",
-                    "Ongoing support and refresher courses",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm text-gray-700">
-                      <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-                      {item}
+                <div className="order-1 md:order-2">
+                  <h2 className="text-4xl font-bold mb-6 text-gray-900">Training</h2>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Your team is your competitive advantage. We design practical, engaging training programmes that build capability and confidence.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-purple-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Bespoke Delivery</p>
+                        <p className="text-sm text-gray-600">On-site and remote options tailored to your team's needs.</p>
+                      </div>
                     </li>
-                  ))}
-                </ul>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-purple-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Certification</p>
+                        <p className="text-sm text-gray-600">Recognised credentials in hospitality management and service.</p>
+                      </div>
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-purple-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Ongoing Support</p>
+                        <p className="text-sm text-gray-600">Refresher courses and follow-up coaching included.</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link href="/contact">
+                    <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full flex items-center gap-2">
+                      Develop Your Team
+                      <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
               </div>
 
-              {/* Hospitality Management */}
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-10 border border-blue-200 hover:shadow-xl transition">
-                <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6">
-                  <Building2 className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Hospitality Management</h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Complete property management solutions including PMS, HMS, and revenue optimization tools to
-                  streamline your operations.
-                </p>
-                <ul className="space-y-3">
-                  {[
-                    "Property Management Systems (PMS)",
-                    "Hotel Management Systems (HMS)",
-                    "Channel management integration",
-                    "Guest experience optimization",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm text-gray-700">
-                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-                      {item}
+              {/* Interim Management */}
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-4xl font-bold mb-6 text-gray-900">Interim Management</h2>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    When you need experienced leadership on the ground, our interim managers provide hands-on support during transitions, crises, or planned absences.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Acting General Manager</p>
+                        <p className="text-sm text-gray-600">Full P&L responsibility and operational leadership.</p>
+                      </div>
                     </li>
-                  ))}
-                </ul>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Revenue & Operations Director</p>
+                        <p className="text-sm text-gray-600">Commercial optimisation and process improvements.</p>
+                      </div>
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Crisis Management</p>
+                        <p className="text-sm text-gray-600">Rapid stabilisation and recovery planning.</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link href="/contact">
+                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full flex items-center gap-2">
+                      Find the Right Manager
+                      <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-10 border border-blue-200 h-full">
+                  <div className="space-y-6">
+                    <div className="p-4 bg-white rounded-lg border border-blue-100">
+                      <p className="font-semibold text-gray-900 mb-1">Flexible Duration</p>
+                      <p className="text-sm text-gray-600">Days to months, tailored to your timeline.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-blue-100">
+                      <p className="font-semibold text-gray-900 mb-1">Seamless Integration</p>
+                      <p className="text-sm text-gray-600">Quick onboarding and immediate impact.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-blue-100">
+                      <p className="font-semibold text-gray-900 mb-1">Knowledge Transfer</p>
+                      <p className="text-sm text-gray-600">Coaching your team for sustainable improvements.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              {/* Technology Integration */}
-              <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-10 border border-orange-200 hover:shadow-xl transition">
-                <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6">
-                  <Settings className="w-8 h-8 text-white" />
+              {/* Audits & Compliance */}
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-10 border border-green-200 h-full order-2 md:order-1">
+                  <div className="space-y-6">
+                    <div className="p-4 bg-white rounded-lg border border-green-100">
+                      <p className="font-semibold text-gray-900 mb-1">Health & Safety Audits</p>
+                      <p className="text-sm text-gray-600">Compliance with UK and international standards.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-green-100">
+                      <p className="font-semibold text-gray-900 mb-1">Regulatory Readiness</p>
+                      <p className="text-sm text-gray-600">Preparation for inspections and certifications.</p>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-green-100">
+                      <p className="font-semibold text-gray-900 mb-1">Risk Management</p>
+                      <p className="text-sm text-gray-600">Identification and mitigation of operational risks.</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Technology Integration</h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Seamless integration of new systems with your existing technology infrastructure for a unified
-                  operational experience.
-                </p>
-                <ul className="space-y-3">
-                  {[
-                    "System integration services",
-                    "API development and connectivity",
-                    "Data migration and synchronization",
-                    "Legacy system modernization",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm text-gray-700">
-                      <div className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
-                      {item}
+                <div className="order-1 md:order-2">
+                  <h2 className="text-4xl font-bold mb-6 text-gray-900">Audits & Compliance</h2>
+                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Comprehensive audits ensure your operations meet legal, safety, and industry standards. We identify gaps and recommend practical solutions.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-green-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Independent Assessment</p>
+                        <p className="text-sm text-gray-600">Objective evaluation by experienced auditors.</p>
+                      </div>
                     </li>
-                  ))}
-                </ul>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-green-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Detailed Reporting</p>
+                        <p className="text-sm text-gray-600">Clear findings with actionable recommendations.</p>
+                      </div>
+                    </li>
+                    <li className="flex gap-3">
+                      <CheckCircle className="w-6 h-6 text-green-600 shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-gray-900">Follow-Up Support</p>
+                        <p className="text-sm text-gray-600">Guidance through implementation of improvements.</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <Link href="/contact">
+                    <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full flex items-center gap-2">
+                      Schedule an Audit
+                      <ArrowRight className="w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Solutions Overview */}
+        {/* Why Choose HMCTS */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">Our Technology Solutions</h2>
-              <p className="text-lg text-gray-600">Cutting-edge tools designed for the hospitality industry</p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
-                <div className="w-14 h-14 bg-teal-500 rounded-xl flex items-center justify-center mb-4">
-                  <Server className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Property Management Systems</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Complete PMS solutions for reservations, check-ins, housekeeping, billing, and reporting.
-                </p>
-                <Button variant="outline" className="w-full rounded-full bg-transparent">
-                  Learn More
-                </Button>
+            <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Why Choose HMCTS?</h2>
+            <div className="grid md:grid-cols-4 gap-6">
+              <div className="bg-white rounded-lg p-8 border border-gray-200 text-center">
+                <Users className="w-12 h-12 text-teal-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">Expert-Led</h3>
+                <p className="text-sm text-gray-600">Decades of combined hospitality experience across all operations areas.</p>
               </div>
-
-              <div className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
-                <div className="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
-                  <Building2 className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Hotel Management Systems</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Comprehensive HMS for multi-property management with centralized control and analytics.
-                </p>
-                <Button variant="outline" className="w-full rounded-full bg-transparent">
-                  Learn More
-                </Button>
+              <div className="bg-white rounded-lg p-8 border border-gray-200 text-center">
+                <TrendingUp className="w-12 h-12 text-teal-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">Results-Focused</h3>
+                <p className="text-sm text-gray-600">Measurable improvements in revenue, operations, and team performance.</p>
               </div>
-
-              <div className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
-                <div className="w-14 h-14 bg-purple-500 rounded-xl flex items-center justify-center mb-4">
-                  <TrendingUp className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Revenue Optimization</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Advanced revenue management tools to maximize occupancy and profitability.
-                </p>
-                <Button variant="outline" className="w-full rounded-full bg-transparent">
-                  Learn More
-                </Button>
+              <div className="bg-white rounded-lg p-8 border border-gray-200 text-center">
+                <Shield className="w-12 h-12 text-teal-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">Bespoke Solutions</h3>
+                <p className="text-sm text-gray-600">No one-size-fits-all approach—we tailor every engagement to your needs.</p>
               </div>
-
-              <div className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
-                <div className="w-14 h-14 bg-orange-500 rounded-xl flex items-center justify-center mb-4">
-                  <Workflow className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Channel Management</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Synchronize rates and availability across all booking channels in real-time.
-                </p>
-                <Button variant="outline" className="w-full rounded-full bg-transparent">
-                  Learn More
-                </Button>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
-                <div className="w-14 h-14 bg-pink-500 rounded-xl flex items-center justify-center mb-4">
-                  <Star className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Guest Experience Tools</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Mobile check-in, digital concierge, and personalized guest communication platforms.
-                </p>
-                <Button variant="outline" className="w-full rounded-full bg-transparent">
-                  Learn More
-                </Button>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
-                <div className="w-14 h-14 bg-emerald-500 rounded-xl flex items-center justify-center mb-4">
-                  <GraduationCap className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Staff Training Programs</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Comprehensive training modules and certification programs for your hospitality team.
-                </p>
-                <Button variant="outline" className="w-full rounded-full bg-transparent">
-                  Learn More
-                </Button>
+              <div className="bg-white rounded-lg p-8 border border-gray-200 text-center">
+                <CheckCircle className="w-12 h-12 text-teal-600 mx-auto mb-4" />
+                <h3 className="font-bold text-gray-900 mb-2">Proven Track Record</h3>
+                <p className="text-sm text-gray-600">Trusted by independent hotels, boutique groups, and hospitality schools.</p>
               </div>
             </div>
           </div>
@@ -226,22 +290,15 @@ export default function ServicesPage() {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-br from-teal-600 to-emerald-600 text-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+            <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Operations?</h2>
             <p className="text-xl mb-8 text-teal-50">
-              Let's discuss how our services can help transform your hospitality business.
+              Let's discuss how HMCTS can support your hospitality business.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/contact">
               <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
                 Schedule a Consultation
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full bg-transparent"
-              >
-                View Our Solutions
-              </Button>
-            </div>
+            </Link>
           </div>
         </section>
       </main>

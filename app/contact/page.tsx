@@ -50,12 +50,26 @@ export default function ContactPage() {
                 <div className="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Email Us</h3>
+                <h3 className="font-bold text-lg mb-2">General Enquiries</h3>
                 <a
-                  href="mailto:info@hospitalitysoftwaresolutions.com"
+                  href="mailto:hotelmanagement@hmcts.co.uk"
                   className="text-sm text-blue-600 hover:underline break-all"
                 >
-                  info@hospitalitysoftwaresolutions.com
+                  hotelmanagement@hmcts.co.uk
+                </a>
+                <p className="text-xs text-gray-600 mt-1">or <a href="mailto:info@hmcts.co.uk" className="hover:underline">info@hmcts.co.uk</a></p>
+              </div>
+
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center border border-blue-200">
+                <div className="w-14 h-14 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <Mail className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="font-bold text-lg mb-2">Finance Enquiries</h3>
+                <a
+                  href="mailto:finance@hmcts.co.uk"
+                  className="text-sm text-blue-600 hover:underline break-all"
+                >
+                  finance@hmcts.co.uk
                 </a>
               </div>
 
@@ -64,28 +78,23 @@ export default function ContactPage() {
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Call Us</h3>
-                <a href="tel:+15551234567" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
-                  +1 (555) 123-4567
+                <a href="tel:+443333355520" className="text-sm text-gray-700 hover:text-orange-600 font-medium">
+                  +44 (0)333 335 5520
                 </a>
-                <p className="text-xs text-gray-600 mt-1">24/7 Support Available</p>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 text-center border border-purple-200">
-                <div className="w-14 h-14 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="font-bold text-lg mb-2">Visit Us</h3>
-                <p className="text-sm text-gray-700">Global Hospitality Solutions</p>
-                <p className="text-xs text-gray-600 mt-1">Worldwide Service</p>
+                <p className="text-xs text-gray-600 mt-1">Mon–Fri 09:00–17:00</p>
               </div>
 
               <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-6 text-center border border-teal-200">
                 <div className="w-14 h-14 bg-teal-500 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-7 h-7 text-white" />
+                  <Mail className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="font-bold text-lg mb-2">Working Hours</h3>
-                <p className="text-sm text-gray-700">Mon - Fri: 9:00 AM - 6:00 PM</p>
-                <p className="text-xs text-gray-600 mt-1">Weekend: By Appointment</p>
+                <h3 className="font-bold text-lg mb-2">Compliance</h3>
+                <a
+                  href="mailto:partners@hmcts.co.uk"
+                  className="text-sm text-teal-600 hover:underline break-all"
+                >
+                  partners@hmcts.co.uk
+                </a>
               </div>
             </div>
 
