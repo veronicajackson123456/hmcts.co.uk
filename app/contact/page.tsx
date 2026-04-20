@@ -88,12 +88,12 @@ export default function ContactPage() {
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-lg mb-2">Compliance</h3>
-            <a
-              href="tel:+18459047626"
-              className="px-6 py-3 bg-white border-2 border-teal-600 text-teal-600 rounded-lg hover:bg-teal-50 transition-colors text-center font-medium"
-            >
-              Call +1 (845) 904-7626
-            </a>
+                <a
+                  href="mailto:partners@hmcts.co.uk"
+                  className="text-sm text-teal-600 hover:underline break-all"
+                >
+                  partners@hmcts.co.uk
+                </a>
               </div>
             </div>
 
