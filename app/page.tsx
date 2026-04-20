@@ -71,7 +71,25 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Transform Your Operations Section */}
+        {/* Company Registration Block */}
+        <section className="py-12 bg-gray-50 border-b border-gray-200">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="bg-white rounded-lg border border-gray-200 p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">HMCTS — Hotel Management Consultants & Training Specialists</h2>
+              <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-700">
+                <div>
+                  <p className="mb-2"><span className="font-semibold">Registered company:</span> HMCTS Ltd</p>
+                  <p className="mb-2"><span className="font-semibold">Company no.</span> [00000000]</p>
+                  <p className="mb-2"><span className="font-semibold">Registered address:</span> [Street, City, Postcode]</p>
+                  <p><span className="font-semibold">VAT:</span> [if applicable]</p>
+                </div>
+                <div>
+                  <p className="mb-2">For partner verification and compliance documents, visit our <a href="/for-partners" className="text-teal-600 hover:text-teal-700 font-semibold">For Banks & Partners</a> page.</p>
+                  <p className="text-xs text-gray-600 mt-4">Emails ending with @hmcts.co.uk are legitimate. See our SPF/DKIM/DMARC records for verification.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         <section className="py-20 bg-gradient-to-b from-emerald-50 to-white">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="grid md:grid-cols-2 gap-12 items-center">

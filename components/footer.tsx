@@ -166,8 +166,9 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-300">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-gray-600">
-              <p className="font-semibold text-gray-900">HMCTS Ltd — Hotel Management Consultants & Training Specialists</p>
-              <p className="text-xs">For verification: contact <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:underline">partners@hmcts.co.uk</a> | Phone: <a href="tel:+18459047626" className="text-teal-600 hover:underline">+1 (845) 904-7626</a></p>
+              <p className="font-semibold text-gray-900">HMCTS Ltd</p>
+              <p className="text-xs">Company no. [00000000] | Registered office: [Street, City, Postcode] | VAT: [if applicable]</p>
+              <p className="text-xs mt-1">Email: <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:underline">info@hmcts.co.uk</a> | Phone: <a href="tel:+18459047626" className="text-teal-600 hover:underline">+1 (845) 904-7626</a></p>
             </div>
             <p className="text-sm text-gray-600 text-center">
               © 2025 HMCTS Ltd. All rights reserved.

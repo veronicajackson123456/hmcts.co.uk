@@ -33,17 +33,20 @@ export function Header() {
             <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">
               Home
             </Link>
+            <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium">
+              About
+            </Link>
             <Link href="/services" className="text-gray-700 hover:text-gray-900 font-medium">
               Services
             </Link>
-            <Link href="/why-choose-us" className="text-gray-700 hover:text-gray-900 font-medium">
-              Why Choose Us
-            </Link>
-            <Link href="/courses" className="text-gray-700 hover:text-gray-900 font-medium">
-              Courses
+            <Link href="/case-studies" className="text-gray-700 hover:text-gray-900 font-medium">
+              Case Studies
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-gray-900 font-medium">
               Contact
+            </Link>
+            <Link href="/for-partners" className="text-gray-700 hover:text-gray-900 font-medium text-sm">
+              For Partners
             </Link>
           </nav>
 
@@ -65,17 +68,20 @@ export function Header() {
               <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">
                 Home
               </Link>
+              <Link href="/about" className="text-gray-700 hover:text-gray-900 font-medium">
+                About
+              </Link>
               <Link href="/services" className="text-gray-700 hover:text-gray-900 font-medium">
                 Services
               </Link>
-              <Link href="/why-choose-us" className="text-gray-700 hover:text-gray-900 font-medium">
-                Why Choose Us
-              </Link>
-              <Link href="/courses" className="text-gray-700 hover:text-gray-900 font-medium">
-                Courses
+              <Link href="/case-studies" className="text-gray-700 hover:text-gray-900 font-medium">
+                Case Studies
               </Link>
               <Link href="/contact" className="text-gray-700 hover:text-gray-900 font-medium">
                 Contact
+              </Link>
+              <Link href="/for-partners" className="text-gray-700 hover:text-gray-900 font-medium">
+                For Partners
               </Link>
               <Button className="bg-orange-500 hover:bg-orange-600 text-white rounded-full">Get Started</Button>
             </div>
