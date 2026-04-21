@@ -1,7 +1,7 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { TrendingUp, Users, Target, Briefcase } from "lucide-react"
+import { TrendingUp, Target, Briefcase } from "lucide-react"
 import Link from "next/link"
 
 export const metadata = {
@@ -25,7 +25,6 @@ export default function CaseStudiesPage() {
       ],
       keyActivities:
         "Restructured operations, introduced staff training programmes, implemented new revenue management processes.",
-      permission: "Permission to use anonymised information granted.",
     },
     {
       title: "Pre-Opening Consultancy — New Boutique Property",
@@ -41,7 +40,6 @@ export default function CaseStudiesPage() {
       ],
       keyActivities:
         "Designed all operational procedures, recruited and trained management team, established vendor relationships, executed soft opening.",
-      permission: "Permission to use anonymised information granted.",
     },
     {
       title: "Revenue Optimization for Multi-Unit Group",
@@ -57,7 +55,6 @@ export default function CaseStudiesPage() {
       ],
       keyActivities:
         "Conducted revenue audits, aligned pricing strategies, trained revenue teams, implemented centralised systems.",
-      permission: "Permission to use anonymised information granted.",
     },
     {
       title: "Staff Development Program for Boutique Group",
@@ -73,7 +70,6 @@ export default function CaseStudiesPage() {
       ],
       keyActivities:
         "Developed bespoke training curriculum, delivered on-site workshops, mentored management teams, implemented feedback systems.",
-      permission: "Permission to use anonymised information granted.",
     },
     {
       title: "Health & Safety Audit & Remediation",
@@ -89,7 +85,6 @@ export default function CaseStudiesPage() {
       ],
       keyActivities:
         "Conducted full audit, created remediation plan, trained staff on new procedures, implemented monitoring systems.",
-      permission: "Permission to use anonymised information granted.",
     },
     {
       title: "Interim Management During Leadership Transition",
@@ -105,7 +100,6 @@ export default function CaseStudiesPage() {
       ],
       keyActivities:
         "Day-to-day operational management, team leadership, financial control, liaison with ownership on transition plan.",
-      permission: "Permission to use anonymised information granted.",
     },
   ]
 
@@ -197,11 +191,11 @@ export default function CaseStudiesPage() {
                           <TrendingUp className="w-6 h-6 text-emerald-600" />
                           Measurable Results
                         </h4>
-                        <ul className="space-y-3">
+                        <ul className="space-y-2">
                           {study.results.map((result, i) => (
-                            <li key={i} className="flex gap-3 text-gray-700">
+                            <li key={i} className="flex items-start gap-3">
                               <span className="text-emerald-600 font-bold mt-1">✓</span>
-                              <span>{result}</span>
+                              <span className="text-gray-700">{result}</span>
                             </li>
                           ))}
                         </ul>
@@ -210,17 +204,9 @@ export default function CaseStudiesPage() {
                   </div>
 
                   {/* Key Activities */}
-                  <div className="bg-gray-50 rounded-lg p-6 mb-6 border border-gray-200">
-                    <h4 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-                      <Users className="w-6 h-6 text-teal-600" />
-                      Key Activities
-                    </h4>
-                    <p className="text-gray-700">{study.keyActivities}</p>
-                  </div>
-
-                  {/* Permission */}
-                  <div className="text-sm text-gray-600 italic border-t border-gray-200 pt-4">
-                    {study.permission}
+                  <div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                    <h4 className="font-bold text-gray-900 mb-2">Key Activities</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">{study.keyActivities}</p>
                   </div>
                 </div>
               ))}
@@ -228,59 +214,24 @@ export default function CaseStudiesPage() {
           </div>
         </section>
 
-        {/* Why These Results */}
-        <section className="py-20 bg-emerald-50">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Why We Deliver Results</h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl p-8 border border-emerald-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Expert-Led</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Our team brings decades of hands-on hospitality experience. We understand operational realities and design solutions that actually work.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 border border-emerald-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Bespoke Approach</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  We don't apply cookie-cutter solutions. Every engagement is tailored to your specific challenges, market position, and team capability.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 border border-emerald-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Measurable Outcomes</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  We focus on quantifiable improvements: revenue uplift, cost efficiency, team performance, and sustainable operational change.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials CTA */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Want to Discuss Your Challenge?</h2>
-            <p className="text-lg text-gray-700 mb-8">
-              These are just a few examples of the results we've achieved. Every property and business is different. Let's explore how HMCTS can support your specific goals.
+        {/* CTA Section */}
+        <section className="py-20 bg-teal-50">
+          <div className="container mx-auto px-4 max-w-6xl text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Ready to Transform Your Business?</h2>
+            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+              These case studies demonstrate the results we consistently deliver. Let's discuss how HMCTS can help your property achieve similar outcomes.
             </p>
-            <Link href="/contact">
-              <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full text-lg font-semibold">
-                Schedule a Consultation
-              </Button>
-            </Link>
-          </div>
-        </section>
-
-        {/* Confidentiality Notice */}
-        <section className="py-12 bg-gray-50 border-t border-gray-200">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center text-sm text-gray-600 bg-white rounded-lg p-6 border border-gray-200">
-              <p>
-                Client names and specific details in these case studies have been anonymised to protect client confidentiality. Full references and detailed information are available upon request
-                via our <a href="/for-partners" className="text-teal-600 hover:underline font-semibold">For Banks & Partners</a> compliance hub.
-              </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/contact">
+                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg rounded-full">
+                  Start a Conversation
+                </Button>
+              </Link>
+              <Link href="/pricing">
+                <Button variant="outline" className="border-2 border-teal-600 text-teal-600 hover:bg-teal-50 px-8 py-6 text-lg rounded-full">
+                  View Pricing
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
