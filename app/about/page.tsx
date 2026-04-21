@@ -82,7 +82,32 @@ export default function AboutPage() {
               </p>
             </div>
 
-            {/* Service Areas */}
+            {/* Client Success Metrics */}
+            <div className="mt-20">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12">Proven Results Across Our Engagements</h2>
+              <div className="grid md:grid-cols-4 gap-6">
+                <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-8 border border-teal-200">
+                  <p className="text-4xl font-bold text-teal-600 mb-2">24%</p>
+                  <p className="font-semibold text-gray-900 mb-1">Average Revenue Growth</p>
+                  <p className="text-sm text-gray-600">Across consulting engagements</p>
+                </div>
+                <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-8 border border-emerald-200">
+                  <p className="text-4xl font-bold text-emerald-600 mb-2">35%</p>
+                  <p className="font-semibold text-gray-900 mb-1">Staff Retention Improvement</p>
+                  <p className="text-sm text-gray-600">Through training and development</p>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200">
+                  <p className="text-4xl font-bold text-blue-600 mb-2">18%</p>
+                  <p className="font-semibold text-gray-900 mb-1">RevPAR Improvement</p>
+                  <p className="text-sm text-gray-600">Multi-unit portfolio optimisation</p>
+                </div>
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 border border-purple-200">
+                  <p className="text-4xl font-bold text-purple-600 mb-2">6/10</p>
+                  <p className="font-semibold text-gray-900 mb-1">Client Satisfaction</p>
+                  <p className="text-sm text-gray-600">Out of recent completed projects</p>
+                </div>
+              </div>
+            </div>
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">What We Specialise In</h2>
               <div className="grid md:grid-cols-2 gap-8">
@@ -158,6 +183,97 @@ export default function AboutPage() {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose HMCTS */}
+        <section className="py-20 bg-teal-50">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Why Hotels Choose HMCTS</h2>
+            
+            <div className="grid md:grid-cols-2 gap-12 mb-12">
+              <div className="bg-white rounded-xl p-8 border border-teal-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Operational Excellence</h3>
+                <ul className="space-y-4">
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Proven systems</strong> that deliver consistent performance across all operational areas</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Quality standards</strong> that protect your brand reputation and guest satisfaction</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Risk mitigation</strong> through compliance support and H&S expertise</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-8 border border-teal-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Financial Performance</h3>
+                <ul className="space-y-4">
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Revenue uplift</strong> through optimised pricing, cost control, and market positioning</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Labour efficiency</strong> via better scheduling, training, and staff retention</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Measurable ROI</strong> on every consulting engagement with transparent reporting</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-8 border border-teal-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Team Development</h3>
+                <ul className="space-y-4">
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Skilled teams</strong> equipped to execute your strategy and deliver service excellence</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Leadership depth</strong> through interim management and management coaching</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Cultural change</strong> that improves engagement and reduces costly turnover</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-xl p-8 border border-teal-200">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Business Continuity</h3>
+                <ul className="space-y-4">
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Dedicated support</strong> during transitions, openings, or crisis situations</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Scalability planning</strong> for growing hotel groups and multi-unit operations</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-teal-600 font-bold">✓</span>
+                    <span className="text-gray-700"><strong>Long-term partnership</strong> with flexibility to adjust scope as your business evolves</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-12 border-2 border-teal-300">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">The HMCTS Difference</h3>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                We don't parachute in with theoretical solutions. We embed ourselves in your operation, understand your unique challenges, and co-develop solutions with your team. Our consultants have lived in hotel environments—we understand occupancy pressures, seasonal volatility, staff constraints, and the real cost of operations.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Every engagement is about building capability in your team so you're never dependent on external support. We train, we mentor, and we leave your business stronger.
+              </p>
             </div>
           </div>
         </section>

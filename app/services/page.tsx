@@ -258,6 +258,91 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* Implementation & ROI Section */}
+        <section className="py-20 bg-teal-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">How We Work & Expected Impact</h2>
+            
+            <div className="grid md:grid-cols-2 gap-12 mb-12">
+              <div>
+                <h3 className="text-3xl font-bold text-gray-900 mb-8">Our Engagement Process</h3>
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg">1</div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">Discovery & Assessment</h4>
+                      <p className="text-gray-700">We conduct a thorough assessment of your operations, challenges, and goals. This informs our recommendations.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg">2</div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">Strategy & Planning</h4>
+                      <p className="text-gray-700">We develop a bespoke strategy with clear deliverables, timelines, and success metrics aligned to your business goals.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg">3</div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">Execution & Support</h4>
+                      <p className="text-gray-700">We implement recommendations with your team, providing hands-on support, training, and accountability.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg">4</div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-2">Measurement & Transition</h4>
+                      <p className="text-gray-700">We monitor progress, report on KPIs, and ensure your team is equipped to sustain improvements independently.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-3xl font-bold text-gray-900 mb-8">Typical Business Impact</h3>
+                <div className="space-y-4">
+                  <div className="bg-white rounded-lg p-6 border-l-4 border-teal-600">
+                    <h4 className="font-bold text-gray-900 mb-2">Revenue & Profitability</h4>
+                    <p className="text-gray-700 text-sm mb-2">Consulting clients typically see:</p>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• 15-25% revenue improvement within 12 months</li>
+                      <li>• 2-4 point improvement in profit margins</li>
+                      <li>• Better occupancy/ADR balance</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white rounded-lg p-6 border-l-4 border-emerald-600">
+                    <h4 className="font-bold text-gray-900 mb-2">Operational Efficiency</h4>
+                    <p className="text-gray-700 text-sm mb-2">Through audits and process improvement:</p>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• 10-15% reduction in operational costs</li>
+                      <li>• Improved system compliance and safety</li>
+                      <li>• Stronger vendor relationships and better terms</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white rounded-lg p-6 border-l-4 border-purple-600">
+                    <h4 className="font-bold text-gray-900 mb-2">Team Performance</h4>
+                    <p className="text-gray-700 text-sm mb-2">After training and leadership support:</p>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• 25-40% improvement in staff retention</li>
+                      <li>• 20-30 point improvement in guest satisfaction</li>
+                      <li>• Stronger management bench strength</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl p-10 border-2 border-teal-300 text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Transparent Pricing & Clear Scope</h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Every engagement includes a detailed proposal with clear scope, deliverables, timelines, and investment. We report regularly on progress and ROI. There are no hidden fees or scope creep—just honest, results-focused consulting.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose HMCTS */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 max-w-6xl">
