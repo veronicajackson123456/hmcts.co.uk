@@ -279,7 +279,37 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-teal-600 to-teal-700 text-white py-16">
+        {/* Additional Resources */}
+        <section className="py-16 bg-white border-t border-gray-200">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Learn More About HMCTS</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Link href="/services">
+                <div className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-8 border border-teal-200 cursor-pointer hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Our Services</h3>
+                  <p className="text-gray-700 mb-4">Consultancy, training, interim management, and audits. Explore the full range of solutions we offer to hospitality businesses.</p>
+                  <span className="text-teal-600 font-semibold">Explore services →</span>
+                </div>
+              </Link>
+              <Link href="/pricing">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 cursor-pointer hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Pricing & Packages</h3>
+                  <p className="text-gray-700 mb-4">Transparent pricing with flexible engagement models. View our tiered packages and à la carte services with clear investment levels.</p>
+                  <span className="text-blue-600 font-semibold">View pricing →</span>
+                </div>
+              </Link>
+              <Link href="/faq">
+                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200 cursor-pointer hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">FAQ</h3>
+                  <p className="text-gray-700 mb-4">Common questions answered. Learn about our engagement process, how we measure success, and what to expect working with HMCTS.</p>
+                  <span className="text-purple-600 font-semibold">Browse FAQ →</span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
           <div className="container mx-auto px-4 max-w-7xl text-center">
             <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Operations?</h2>
             <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">

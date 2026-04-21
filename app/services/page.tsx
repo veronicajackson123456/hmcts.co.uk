@@ -372,6 +372,36 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* Additional Resources */}
+        <section className="py-16 bg-white border-t border-gray-200">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Explore More Resources</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Link href="/pricing">
+                <div className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-8 border border-teal-200 cursor-pointer hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Pricing & Packages</h3>
+                  <p className="text-gray-700 mb-4">Explore engagement models and investment levels. Transparent pricing with flexible arrangements available.</p>
+                  <span className="text-teal-600 font-semibold">View pricing →</span>
+                </div>
+              </Link>
+              <Link href="/faq">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200 cursor-pointer hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Common Questions</h3>
+                  <p className="text-gray-700 mb-4">Get answers about our services, engagement process, ROI expectations, and how we work with different property types.</p>
+                  <span className="text-blue-600 font-semibold">Browse FAQ →</span>
+                </div>
+              </Link>
+              <Link href="/why-choose-us">
+                <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200 cursor-pointer hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Why HMCTS?</h3>
+                  <p className="text-gray-700 mb-4">Understand what sets HMCTS apart and how we compare to other consulting approaches and alternatives.</p>
+                  <span className="text-purple-600 font-semibold">Learn more →</span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-br from-teal-600 to-emerald-600 text-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
