@@ -39,12 +39,6 @@ export function Header() {
             <Link href="/services" className="text-gray-700 hover:text-gray-900 font-medium">
               Services
             </Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-gray-900 font-medium">
-              Pricing
-            </Link>
-            <Link href="/faq" className="text-gray-700 hover:text-gray-900 font-medium">
-              FAQ
-            </Link>
             <Link href="/case-studies" className="text-gray-700 hover:text-gray-900 font-medium">
               Case Studies
             </Link>
@@ -52,7 +46,7 @@ export function Header() {
               Contact
             </Link>
             <Link href="/for-partners" className="text-gray-700 hover:text-gray-900 font-medium text-sm">
-              Partners
+              For Partners
             </Link>
           </nav>
 
@@ -80,12 +74,6 @@ export function Header() {
               <Link href="/services" className="text-gray-700 hover:text-gray-900 font-medium">
                 Services
               </Link>
-              <Link href="/pricing" className="text-gray-700 hover:text-gray-900 font-medium">
-                Pricing
-              </Link>
-              <Link href="/faq" className="text-gray-700 hover:text-gray-900 font-medium">
-                FAQ
-              </Link>
               <Link href="/case-studies" className="text-gray-700 hover:text-gray-900 font-medium">
                 Case Studies
               </Link>
@@ -93,7 +81,7 @@ export function Header() {
                 Contact
               </Link>
               <Link href="/for-partners" className="text-gray-700 hover:text-gray-900 font-medium">
-                Partners
+                For Partners
               </Link>
               <Button className="bg-orange-500 hover:bg-orange-600 text-white rounded-full">Get Started</Button>
             </div>
