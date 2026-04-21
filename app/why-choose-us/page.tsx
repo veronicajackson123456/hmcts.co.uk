@@ -2,7 +2,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Users, Building, TrendingUp, Headphones, Sparkles } from "lucide-react"
+import { Users, Building, TrendingUp, Headphones, Sparkles, Check, X } from "lucide-react"
+import Link from "next/link"
 
 export default function WhyChooseUsPage() {
   return (
@@ -22,8 +23,7 @@ export default function WhyChooseUsPage() {
               <span className="text-teal-600">HMCTS?</span>
             </h1>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Innovative solutions tailored to meet the needs of the hospitality industry. Our comprehensive offerings
-              empower your business to thrive.
+              Strategic consulting designed specifically for hotel operators. We don't just recommend—we implement alongside your team and build lasting capability.
             </p>
           </div>
         </section>
@@ -36,14 +36,12 @@ export default function WhyChooseUsPage() {
                 <div className="w-16 h-16 bg-teal-500 rounded-2xl flex items-center justify-center mb-6">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Consultation Services</h3>
+                <h3 className="text-2xl font-bold mb-4">Hospitality-Focused Expertise</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Partnered with leading platforms like <span className="font-bold">Cloudbeds</span> to deliver the best
-                  solutions.
+                  We specialise in hotel operations, not general business consulting.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Our expert consultants work closely with you to understand your unique challenges and recommend the
-                  perfect technology stack for your property.
+                  Our consultants have lived in hotel environments. We understand occupancy pressures, seasonal volatility, labour challenges, and the real cost of operations. This isn't theoretical consulting—it's grounded in hospitality reality.
                 </p>
               </div>
 
@@ -51,13 +49,12 @@ export default function WhyChooseUsPage() {
                 <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6">
                   <Building className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Tailored for Hospitality</h3>
+                <h3 className="text-2xl font-bold mb-4">Hands-On Implementation</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Designed specifically for the unique needs of hotels, resorts, and short-term rental properties.
+                  We don't leave you with a report—we implement alongside your team.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Every feature is crafted with hospitality in mind, from front desk operations to guest experience
-                  management.
+                  Our consultants are embedded in your operation during implementation. We train your staff, guide decision-making, and ensure improvements stick. We're partners in execution, not just advisors.
                 </p>
               </div>
 
@@ -65,12 +62,12 @@ export default function WhyChooseUsPage() {
                 <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Scalable Solutions</h3>
+                <h3 className="text-2xl font-bold mb-4">Measurable Business Impact</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Perfect for small boutique hotels to large multi-property chains.
+                  We focus on financial outcomes, not just operational improvements.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Our systems grow with your business, whether you're managing one property or a hundred.
+                  Every engagement has clear KPIs tied to revenue, profitability, occupancy, or guest satisfaction. We track progress and report regularly. Success is measured against your goals, not ours.
                 </p>
               </div>
 
@@ -78,24 +75,99 @@ export default function WhyChooseUsPage() {
                 <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6">
                   <Headphones className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Comprehensive Support</h3>
+                <h3 className="text-2xl font-bold mb-4">Real Partnership Model</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Offering dedicated assistance and training to ensure seamless integration and success.
+                  We build capability in your team, not dependency on us.
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  24/7 support, comprehensive training programs, and ongoing guidance from our expert team.
+                  Our goal is to leave your team equipped to maintain and build on improvements independently. We train, mentor, and document everything. You own the results.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Additional Benefits */}
+        {/* Comparison Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">HMCTS vs. Other Approaches</h2>
+            <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+              Different consulting models work for different needs. Here's how we compare:
+            </p>
+
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-white border-b-2 border-gray-300">
+                    <th className="px-6 py-4 text-left font-bold text-gray-900">Approach</th>
+                    <th className="px-6 py-4 text-center font-bold text-gray-900">HMCTS</th>
+                    <th className="px-6 py-4 text-center font-bold text-gray-900">Big Consulting Firms</th>
+                    <th className="px-6 py-4 text-center font-bold text-gray-900">General Consultants</th>
+                    <th className="px-6 py-4 text-center font-bold text-gray-900">DIY/Internal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white border-b border-gray-200">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Hospitality Expertise</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                    <td className="px-6 py-4 text-center">Variable</td>
+                  </tr>
+                  <tr className="bg-white border-b border-gray-200">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Implementation Support</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center">Limited</td>
+                    <td className="px-6 py-4 text-center">Limited</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                  </tr>
+                  <tr className="bg-white border-b border-gray-200">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Staff Training</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center">Extra Cost</td>
+                    <td className="px-6 py-4 text-center">Extra Cost</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                  </tr>
+                  <tr className="bg-white border-b border-gray-200">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Transparent Pricing</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center">N/A</td>
+                  </tr>
+                  <tr className="bg-white border-b border-gray-200">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Cost-Effective</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center">Premium</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center">Resource-Heavy</td>
+                  </tr>
+                  <tr className="bg-white border-b border-gray-200">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Sustainability Focus</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                  </tr>
+                  <tr className="bg-white">
+                    <td className="px-6 py-4 font-semibold text-gray-900">Interim Management</td>
+                    <td className="px-6 py-4 text-center"><Check className="w-5 h-5 text-emerald-600 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                    <td className="px-6 py-4 text-center"><X className="w-5 h-5 text-gray-400 inline" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* What Sets Us Apart */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">What Sets Us Apart</h2>
-              <p className="text-lg text-gray-600">More reasons to choose HMCTS as your technology partner</p>
+              <h2 className="text-4xl font-bold mb-4">What Sets HMCTS Apart</h2>
+              <p className="text-lg text-gray-600">More reasons to choose HMCTS as your consultancy partner</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -103,33 +175,33 @@ export default function WhyChooseUsPage() {
                 {
                   title: "Industry Expertise",
                   description:
-                    "Years of experience in hospitality technology with deep understanding of property management challenges.",
+                    "Years of hands-on experience in hotel operations. We've managed properties, led teams, and solved real hospitality challenges.",
                 },
                 {
                   title: "Proven Track Record",
-                  description: "Hundreds of satisfied properties have transformed their operations with our solutions.",
+                  description: "Successful engagements across independent hotels, chains, and resorts. Real results: revenue growth, cost reduction, team improvements.",
                 },
                 {
-                  title: "Continuous Innovation",
+                  title: "Bespoke Approach",
                   description:
-                    "Regular updates and new features to keep you ahead of the competition in the hospitality industry.",
+                    "No cookie-cutter solutions. We understand your unique market, property type, and business model.",
                 },
                 {
-                  title: "Seamless Integration",
+                  title: "Embedded Partnership",
                   description:
-                    "Easy integration with existing systems and popular third-party platforms you already use.",
+                    "Our consultants work alongside your team during implementation. We're not just advisors—we're collaborators.",
                 },
                 {
-                  title: "Cost-Effective",
+                  title: "Capability Building",
                   description:
-                    "Flexible pricing plans that fit your budget without compromising on features or quality.",
+                    "We leave your team stronger. Training, documentation, and mentoring ensure sustainability beyond our engagement.",
                 },
                 {
-                  title: "Data Security",
-                  description: "Enterprise-grade security measures to protect your data and your guests' information.",
+                  title: "Transparent & Honest",
+                  description: "Clear proposals, realistic timelines, honest assessment of challenges. No upselling or scope creep.",
                 },
               ].map((benefit, index) => (
-                <div key={index} className="bg-white rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
+                <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8 border border-gray-200 hover:shadow-lg transition">
                   <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-emerald-500 rounded-lg flex items-center justify-center mb-4">
                     <Sparkles className="w-6 h-6 text-white" />
                   </div>
@@ -141,25 +213,55 @@ export default function WhyChooseUsPage() {
           </div>
         </section>
 
+        {/* Why Different Clients Choose HMCTS */}
+        <section className="py-20 bg-teal-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Who Chooses HMCTS</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white rounded-xl p-8 border-l-4 border-teal-600">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Independent Hotels</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Need expert guidance without the overhead of large corporate consultancies. We provide boutique, customised consulting at reasonable investment levels.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-8 border-l-4 border-emerald-600">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Growing Hotel Groups</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Scaling across multiple properties? We help standardise operations, share best practices, and build consistency across your portfolio.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-8 border-l-4 border-blue-600">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Underperforming Properties</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Facing operational or financial challenges? We diagnose root causes and implement solutions with hands-on support to turn things around.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-br from-teal-600 to-emerald-600 text-white">
           <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Property?</h2>
+            <h2 className="text-4xl font-bold mb-6">Ready to Work with a Partner Who Gets Hospitality?</h2>
             <p className="text-xl mb-8 text-teal-50">
-              Join hundreds of properties who have already made the switch to HMCTS and are experiencing exceptional
-              results.
+              Let's discuss your challenges and explore how HMCTS can help drive real business results for your property.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-6 text-lg rounded-full">
-                Start Your Journey with HMCTS
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full bg-transparent"
-              >
-                Schedule a Demo
-              </Button>
+              <Link href="/contact">
+                <Button size="lg" className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-6 text-lg rounded-full font-semibold">
+                  Start a Conversation
+                </Button>
+              </Link>
+              <Link href="/services">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full font-semibold bg-transparent"
+                >
+                  Explore Services
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -169,3 +271,4 @@ export default function WhyChooseUsPage() {
     </div>
   )
 }
+
