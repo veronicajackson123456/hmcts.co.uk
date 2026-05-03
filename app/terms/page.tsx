@@ -1,148 +1,270 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import type { Metadata } from "next"
+import { LegalLayout } from "@/components/legal-layout"
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions | HMCTS LLC — Hotel Management Consultants & Technical Solutions",
+  description:
+    "The Terms and Conditions governing your use of the HMCTS LLC website and services. Applicable to users in the US and UK.",
+}
+
+const sections = [
+  { id: "introduction", title: "Introduction" },
+  { id: "accounts", title: "Accounts & User Responsibilities" },
+  { id: "access", title: "Website Access & Restrictions" },
+  { id: "payments", title: "Payments & Billing" },
+  { id: "cancellation", title: "Cancellation & Refund Policy" },
+  { id: "uk-consumer-rights", title: "UK Consumer Statutory Rights" },
+  { id: "sla", title: "Service Levels & Support" },
+  { id: "intellectual-property", title: "Intellectual Property Rights" },
+  { id: "liability", title: "Limitation of Liability" },
+  { id: "third-party", title: "Third-Party Links" },
+  { id: "privacy", title: "Privacy & Data Protection" },
+  { id: "dispute", title: "Dispute Resolution & Governing Law" },
+  { id: "changes", title: "Changes to These Terms" },
+]
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
+    <LegalLayout
+      title="Terms &amp; Conditions"
+      subtitle="Please read these terms carefully before using our website or services."
+      lastUpdated="April 5, 2025"
+      sections={sections}
+    >
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          The website located at hospitalitysoftwaresolutions.com (the &ldquo;Site&rdquo;) is operated by HMCTS LLC
+          &ndash; Hospitality Management Consultancy &amp; Technology Solutions (&ldquo;Company&rdquo;, &ldquo;us&rdquo;,
+          &ldquo;our&rdquo;, and &ldquo;we&rdquo;). HMCTS LLC is incorporated in the State of Delaware, United States
+          (Authentication Number: 204421330, EIN: 37-2155102). Certain features of the Site may be subject to additional guidelines, terms, or
+          rules, which will be posted in connection with such features and are incorporated by reference into these Terms.
+        </p>
+        <p>
+          These Terms of Use (the &ldquo;Terms&rdquo;) set out the legally binding conditions that govern your use of
+          the Site. By accessing or using the Site, you accept these Terms on behalf of yourself or the entity you
+          represent and confirm that you have the legal capacity to agree to them. If you do not agree with all
+          provisions of these Terms, do not access or use the Site.
+        </p>
+        <p>
+          These Terms apply to users in both the United States and the United Kingdom. UK users should refer to the
+          &ldquo;UK Consumer Statutory Rights&rdquo; section below, which describes rights that apply to them in
+          addition to these Terms.
+        </p>
+      </section>
 
-      <main className="pt-32 pb-20">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Website Terms of Use</h1>
-          <p className="text-lg text-gray-600 mb-12">Version 1.0</p>
+      <section id="accounts">
+        <h2>Accounts &amp; User Responsibilities</h2>
+        <h3>1.1 Account Creation</h3>
+        <p>
+          To access certain features, you may be required to create an account. You must provide truthful and accurate
+          information when registering and are responsible for maintaining the security of your account and password.
+          You agree to notify us immediately of any unauthorised use of your account.
+        </p>
+        <h3>1.2 Account Suspension &amp; Termination</h3>
+        <p>
+          We reserve the right to suspend or terminate accounts that violate these Terms, at our sole discretion and
+          without prior notice. You may close your account at any time by contacting us directly.
+        </p>
+        <h3>1.3 Responsibility for Activity</h3>
+        <p>
+          You are solely responsible for all activity that occurs under your account. HMCTS LLC is not liable for any
+          loss or damage arising from your failure to comply with these requirements.
+        </p>
+      </section>
 
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-700 leading-relaxed mb-6">
-              The website located at hospitalitysoftwaresolutions.com (the "Site") is provided by HMCTS ("Company",
-              "us", "our", and "we"). Certain features of the Site may be subject to additional guidelines, terms, or
-              rules, which will be posted on the Site in connection with such features. All such additional terms,
-              guidelines, and rules are incorporated by reference into these Terms.
-            </p>
+      <section id="access">
+        <h2>Website Access &amp; Restrictions</h2>
+        <h3>2.1 Permitted Use</h3>
+        <p>
+          You may access and use the Site for lawful purposes only. You agree to comply with all applicable laws and
+          regulations when using the Site, including those applicable in your jurisdiction.
+        </p>
+        <h3>2.2 Prohibited Activities</h3>
+        <p>Users agree not to:</p>
+        <ul>
+          <li>Copy, sell, rent, lease, or exploit any part of the Site for commercial gain without our written consent.</li>
+          <li>Modify, reverse-engineer, or attempt to gain unauthorised access to the Site or its systems.</li>
+          <li>Use the Site for fraudulent, illegal, or harmful activities.</li>
+          <li>Transmit any harmful, offensive, or disruptive content through the Site.</li>
+          <li>Use automated systems, bots, or scrapers to extract data from the Site without permission.</li>
+        </ul>
+        <p>
+          Use of the platform API and software is subject to our <a href="/acceptable-use">Acceptable Use Policy</a>.
+        </p>
+        <h3>2.3 Site Modifications</h3>
+        <p>
+          We reserve the right to modify, suspend, or discontinue any part of the Site at any time, with or without
+          notice. We will not be liable to you or any third party for any such modification, suspension, or
+          discontinuation.
+        </p>
+      </section>
 
-            <p className="text-gray-700 leading-relaxed mb-8">
-              These Terms of Use (the "Terms") set forth the legally binding conditions that govern your use of the
-              Site. By accessing or using the Site, you accept these Terms on behalf of yourself or the entity you
-              represent and confirm that you have the legal capacity to agree to them. If you do not agree with all the
-              provisions of these Terms, do not access or use the Site.
-            </p>
+      <section id="payments">
+        <h2>Payments &amp; Billing</h2>
+        <p>
+          All payments must be made in full according to the agreed terms before services are rendered. Late payments
+          may result in additional fees or suspension of services. We reserve the right to update our pricing, and
+          clients will be notified of any changes in advance.
+        </p>
+        <p>
+          Fees are stated in US Dollars (USD) for US-based clients and in Pounds Sterling (GBP) for UK-based clients,
+          unless otherwise agreed in writing. You are responsible for any applicable taxes, duties, VAT, or additional
+          charges associated with your purchase. UK clients will be invoiced with VAT where applicable under UK law.
+        </p>
+        <p>
+          Accepted payment methods include major credit and debit cards. US clients are processed via Stripe or
+          Authorize.net. UK clients are processed via Stripe or Worldpay. All card transactions are subject to the
+          applicable payment gateway&apos;s terms and conditions.
+        </p>
+      </section>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Accounts & User Responsibilities</h2>
+      <section id="cancellation">
+        <h2>Cancellation &amp; Refund Policy</h2>
+        <h3>Subscription Cancellation</h3>
+        <p>
+          You may cancel a subscription at any time by providing written notice. Cancellation will take effect at the
+          end of the current billing period. No refunds are provided for unused portions of a billing period unless
+          required by applicable law (see &ldquo;UK Consumer Statutory Rights&rdquo; below).
+        </p>
+        <h3>One-Time Services</h3>
+        <p>
+          For one-time professional services (including implementation, training, and consultancy), if you wish to
+          cancel, you must notify us in writing at least 7 business days before the scheduled service date.
+          Cancellations made after this period may not be eligible for any credit or rescheduling.
+        </p>
+        <h3>Non-Refundable Payments</h3>
+        <p>
+          Where services have been fully delivered, payment is non-refundable except where required by applicable law.
+          Any complaints regarding services must be raised with us prior to completion of delivery. By making payment,
+          you confirm that the services delivered were satisfactory unless you have raised a complaint in writing
+          before payment was processed.
+        </p>
+      </section>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>1.1 Account Creation</strong> – To access certain features, you may be required to create an
-              account. You must provide truthful and accurate information when registering and are responsible for
-              maintaining the security of your account and password.
-            </p>
+      <section id="uk-consumer-rights">
+        <h2>UK Consumer Statutory Rights</h2>
+        <p>
+          If you are a consumer based in the United Kingdom, nothing in these Terms affects your statutory rights
+          under applicable UK consumer protection law, including the Consumer Rights Act 2015 and the Consumer
+          Contracts (Information, Cancellation and Additional Charges) Regulations 2013. These rights cannot be
+          waived or excluded by contract.
+        </p>
+        <p>
+          Key statutory rights for UK consumers include:
+        </p>
+        <ul>
+          <li>
+            <strong>Right to cancel (cooling-off period):</strong> For contracts concluded online or at a distance, UK
+            consumers have a 14-day right to cancel from the date of the contract, unless the service has been fully
+            performed during that period with your prior agreement and acknowledgement that the right to cancel is lost
+            on full performance.
+          </li>
+          <li>
+            <strong>Right to a refund:</strong> Where a service does not meet the standards required by law (that it is
+            performed with reasonable care and skill), you may be entitled to a repeat performance or a price
+            reduction, up to a full refund.
+          </li>
+          <li>
+            <strong>Right to redress:</strong> You retain the right to pursue a claim through the UK courts or an
+            alternative dispute resolution scheme in the event of an unresolved dispute.
+          </li>
+        </ul>
+      </section>
 
-            <p className="text-gray-700 leading-relaxed mb-6">
-              <strong>1.2 Account Suspension & Termination</strong> – We reserve the right to suspend or terminate
-              accounts that violate these Terms. You may delete your account at any time by following the instructions
-              on the Site.
-            </p>
+      <section id="sla">
+        <h2>Service Levels &amp; Support</h2>
+        <p>
+          We are committed to providing a reliable and professionally supported service. Our standard support hours are
+          Monday to Friday, 09:00&ndash;17:30 GMT. We target a response to support requests within one business day.
+        </p>
+        <p>
+          Planned maintenance windows will be communicated at least 24 hours in advance where possible. In the event of
+          unplanned downtime, we will communicate status updates promptly. Specific service level commitments for
+          enterprise clients are set out in their individual service agreements.
+        </p>
+      </section>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Website Access & Restrictions</h2>
+      <section id="intellectual-property">
+        <h2>Intellectual Property Rights</h2>
+        <p>
+          All content, trademarks, logos, graphics, text, software, and other materials on the Site are the property
+          of HMCTS LLC or its licensors and are protected by applicable intellectual property laws in the US and UK.
+        </p>
+        <p>
+          Unauthorised reproduction, distribution, modification, or any other use of any copyrighted materials is
+          strictly prohibited. You may not use our trademarks or branding in any way without our prior written consent.
+        </p>
+      </section>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>2.2 Prohibited Activities</strong> – Users agree NOT to: copy, sell, rent, lease, or exploit any
-              part of the Site for commercial gain; modify, reverse-engineer, or attempt to gain unauthorized access to
-              the Site; or use the Site for fraudulent, illegal, or harmful activities.
-            </p>
+      <section id="liability">
+        <h2>Limitation of Liability</h2>
+        <p>
+          We do not guarantee that the Site will be error-free or uninterrupted. To the fullest extent permitted by
+          applicable law, HMCTS LLC is not liable for any indirect, incidental, consequential, special, or punitive
+          damages resulting from the use of, or inability to use, the Site or our services.
+        </p>
+        <p>
+          In no event shall our total liability to you for all claims exceed the amount paid by you, if any, for
+          accessing or using our services during the twelve (12) months prior to the claim.
+        </p>
+        <p>
+          Nothing in these Terms excludes or limits our liability for death or personal injury caused by our
+          negligence, for fraud or fraudulent misrepresentation, or for any other matter that cannot be excluded
+          or limited by applicable law. This applies to both US and UK users.
+        </p>
+      </section>
 
-            <p className="text-gray-700 leading-relaxed mb-6">
-              <strong>2.3 Site Modifications</strong> – We reserve the right to modify, suspend, or discontinue any part
-              of the Site at any time, with or without notice.
-            </p>
+      <section id="third-party">
+        <h2>Third-Party Links</h2>
+        <p>
+          The Site may include links to third-party websites and services. These links are provided for your
+          convenience only. We do not endorse, control, or take responsibility for any third-party content, privacy
+          practices, or products. Your use of third-party sites is at your own risk and subject to their respective
+          terms and conditions.
+        </p>
+      </section>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Payments & Billing</h2>
+      <section id="privacy">
+        <h2>Privacy &amp; Data Protection</h2>
+        <p>
+          Our <a href="/privacy">Privacy Policy</a> explains how we collect, store, use, and protect your personal
+          information in compliance with applicable US state law and the UK General Data Protection Regulation (UK
+          GDPR). By using the Site, you agree to our data practices as described in the Privacy Policy. Our{" "}
+          <a href="/cookies">Cookie Policy</a> explains our use of cookies and tracking technologies.
+        </p>
+      </section>
 
-            <p className="text-gray-700 leading-relaxed mb-6">
-              All payments must be made in full according to the agreed terms before services are rendered. Late
-              payments may result in additional fees or suspension of services. Prices for services may change, and we
-              will notify clients of any updates.
-            </p>
+      <section id="dispute">
+        <h2>Dispute Resolution &amp; Governing Law</h2>
+        <p>
+          For US-based users, these Terms shall be governed by and construed in accordance with the laws of the State
+          of Delaware, United States, without regard to its conflict of law provisions. Any disputes arising under these
+          Terms shall be resolved through binding arbitration in Delaware, and you waive the right to participate in a
+          class-action lawsuit.
+        </p>
+        <p>
+          For UK-based users, these Terms shall be governed by the laws of England and Wales. Nothing in these Terms
+          affects your right to bring proceedings in the courts of England, Wales, Scotland, or Northern Ireland, or
+          your statutory rights as a UK consumer.
+        </p>
+        <p>
+          If any provision of these Terms is found to be unenforceable, that provision shall be modified to the minimum
+          extent necessary, and the remainder of the Terms shall continue in full force and effect.
+        </p>
+      </section>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Cancellation & Refund Policy</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>No Refunds or Recalls of Payment</strong>
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-              1) (a) Receipt of payment for services after completion of the services shall be construed as acceptance
-              of the services as satisfactory and without complaint by the Client. (b) Any complaints regarding the
-              services must be raised with the Consultant prior to making payment. After payment, the Client agrees that
-              no disputes or claims regarding the services will be accepted.
-            </p>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              2) (a) Once payment has been made, the Client agrees that it is non-refundable and cannot be recalled or
-              disputed. (b) The Client agrees that this Agreement shall be used as evidence to financial institutions,
-              granting permission to reject any chargebacks or payment reversal requests.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Intellectual Property Rights</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              All content, trademarks, logos, and materials on the Site are the property of the website owner or its
-              licensors. Unauthorized use of any copyrighted materials is strictly prohibited.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Limitation of Liability</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              We do not guarantee that the Site will be error-free, uninterrupted, or meet your specific needs. The
-              website owner is not liable for any indirect, incidental, or consequential damages resulting from the use
-              of the Site. Accessing the Site is at your own risk. The owners of the website will not be held
-              responsible for any fraudulent, criminal, or financial claims relating to this website, including any
-              misrepresentation or impersonation in any way.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Third-Party Links & Advertisements</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              The Site may include links to third-party websites and advertisements. We do not endorse or take
-              responsibility for any third-party content.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Privacy & Data Protection</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Our Privacy Policy outlines how we collect, store, and protect your personal information. By using the
-              Site, you agree to our data practices as described in the Privacy Policy.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Dispute Resolution & Governing Law</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-6">
-              Any disputes will be resolved through binding arbitration under the laws of the relevant country of the
-              website owner's choice. Users waive the right to participate in a class-action lawsuit.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Changes to These Terms</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-8">
-              We may update these Terms from time to time. Use of the Site means you accept the changes.
-            </p>
-
-            <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">9. Contact Information</h2>
-
-            <p className="text-gray-700 leading-relaxed mb-4">
-              If you have any questions about these Terms and Conditions, please contact us at:
-            </p>
-
-            <div className="mt-4 p-4 bg-gray-100 rounded-lg">
-              <p className="font-semibold">HMCTS LLC — Hotel Management Consultants & Training Specialists</p>
-              <p>General Enquiries: <a href="mailto:hotelmanagement@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">hotelmanagement@hmcts.co.uk</a> or <a href="mailto:info@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">info@hmcts.co.uk</a></p>
-              <p>Finance Enquiries: <a href="mailto:finance@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">finance@hmcts.co.uk</a></p>
-              <p>Compliance & Verification: <a href="mailto:partners@hmcts.co.uk" className="text-teal-600 hover:text-teal-700">partners@hmcts.co.uk</a></p>
-              <p>Phone: <a href="tel:+443333355520" className="text-teal-600 hover:text-teal-700">+44 (0)333 335 5520</a></p>
-              <p className="text-xs text-gray-600 mt-2">UK: SR 20243712436 | US: EIN 37-2155102</p>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <Footer />
-    </div>
+      <section id="changes">
+        <h2>Changes to These Terms</h2>
+        <p>
+          We may update these Terms from time to time. When we make material changes, we will update the &ldquo;Last
+          updated&rdquo; date at the top of this page and, where appropriate, notify you by email. Your continued use
+          of the Site after any changes constitutes your acceptance of the revised Terms.
+        </p>
+        <p>
+          If you have any questions about these Terms, please <a href="/contact">contact us</a>.
+        </p>
+      </section>
+    </LegalLayout>
   )
 }

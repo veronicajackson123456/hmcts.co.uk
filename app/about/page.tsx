@@ -1,13 +1,44 @@
+import type { Metadata } from "next"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Award, Users, Globe } from "lucide-react"
+import { Shield, Globe, Users, Target, Linkedin, MapPin, Building, Phone, Mail } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
-export const metadata = {
-  title: "About HMCTS | Hotel Management Consultants & Training Specialists",
-  description: "HMCTS provides hotel management consulting, operational training, and bespoke management support across the UK and internationally.",
+export const metadata: Metadata = {
+  title: "About Us | HMCTS LLC",
+  description:
+    "Learn about HMCTS LLC — a US-incorporated hospitality software company with UK operational presence and 30+ years of collective industry experience serving independent hotels in the US and UK.",
 }
+
+const values = [
+  {
+    icon: Shield,
+    title: "Trust & Transparency",
+    description:
+      "We operate with complete transparency — from our pricing to our legal structure. Our clients always know who they are working with and on what terms.",
+  },
+  {
+    icon: Target,
+    title: "Hospitality First",
+    description:
+      "Every feature we build is informed by real operational experience. We have worked in hotels; we understand the pressure points and the priorities.",
+  },
+  {
+    icon: Globe,
+    title: "Dual-Market Expertise",
+    description:
+      "With an active presence in both the United States and the United Kingdom, we deliver solutions that work within the regulatory and operational context of both markets.",
+  },
+  {
+    icon: Users,
+    title: "Partnership Approach",
+    description:
+      "We do not sell software and disappear. We partner with clients for the long term — providing ongoing support, training, and technology updates as your business evolves.",
+  },
+]
 
 export default function AboutPage() {
   return (
@@ -16,281 +47,245 @@ export default function AboutPage() {
 
       <main className="pt-20">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-teal-600 to-teal-700 text-white py-24">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">About HMCTS</h1>
-            <p className="text-xl text-teal-100 max-w-3xl">
-              We're hotel management consultants and training specialists dedicated to transforming hospitality operations across the UK and internationally.
+        <section className="relative bg-gray-900 text-white overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
+              alt="Hotel exterior at dusk"
+              fill
+              className="object-cover opacity-20"
+              priority
+            />
+          </div>
+          <div className="relative container mx-auto px-4 py-24 md:py-32 max-w-7xl">
+            <Badge className="mb-6 bg-teal-500/20 text-teal-300 border-teal-500/30 rounded-full px-4 py-1.5">
+              About HMCTS LLC
+            </Badge>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance leading-tight max-w-3xl">
+              Built by hospitality people,
+              <span className="text-teal-400"> for hospitality people</span>
+            </h1>
+            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+              HMCTS LLC is a technology company founded to solve the real operational challenges facing independent hotel operators in the US and UK markets.
             </p>
           </div>
         </section>
 
-        {/* Main About Section */}
+        {/* Company Story */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 max-w-7xl">
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">What We Do</h2>
-                <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  HMCTS provides hotel management consulting, operational training, and bespoke management support to hospitality clients across the UK and internationally. We specialise in pre-opening management, revenue optimisation, staff training, and interim leadership.
+                <Badge className="mb-4 bg-teal-50 text-teal-700 border-teal-200 rounded-full">Our Story</Badge>
+                <h2 className="text-4xl font-bold mb-6 text-gray-900 text-balance">
+                  Three decades of hospitality experience — in one platform
+                </h2>
+                <p className="text-lg text-gray-600 mb-5 leading-relaxed">
+                  HMCTS LLC was founded by hospitality professionals who had spent careers inside hotels — managing operations, driving revenue, and watching technology either help or hinder their teams. After decades working across properties in both the United States and the United Kingdom, we recognised a persistent gap: the property management software available to independent operators was either too complex for small teams, too limited for ambitious operators, or too expensive for the margins the industry operates on.
                 </p>
-                <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                  Our core expertise spans independent hotels, boutique groups, and hospitality schools. Whether you're launching a new property, optimising existing operations, or developing your team's capabilities, we bring hands-on experience and proven methodologies to every engagement.
+                <p className="text-lg text-gray-600 mb-5 leading-relaxed">
+                  We built HMCTS to change that. Our platform combines enterprise-grade functionality with the practicality that independent hotel operators need — delivered with the support that smaller businesses deserve.
                 </p>
-                <Link href="/contact">
-                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full flex items-center gap-2">
-                    Get in Touch
-                    <ArrowRight className="w-5 h-5" />
-                  </Button>
-                </Link>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Incorporated in the State of Delaware, United States, with an operational base in Manchester, UK, we serve clients on both sides of the Atlantic. Our team brings more than 30 years of collective hospitality industry experience to every implementation.
+                </p>
               </div>
-              <div className="bg-gradient-to-br from-teal-50 to-emerald-50 rounded-xl p-12 border border-teal-200">
-                <div className="space-y-8">
-                  <div className="flex gap-4">
-                    <Award className="w-8 h-8 text-teal-600 shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-bold text-gray-900 mb-2">Expert-Led</h3>
-                      <p className="text-gray-700">Decades of combined hospitality experience across operations, revenue, and leadership.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <Users className="w-8 h-8 text-teal-600 shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-bold text-gray-900 mb-2">Team-Focused</h3>
-                      <p className="text-gray-700">We invest in your people through practical training and leadership development.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <Globe className="w-8 h-8 text-teal-600 shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-bold text-gray-900 mb-2">International Reach</h3>
-                      <p className="text-gray-700">Proven track record with hospitality clients across multiple countries and markets.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Our Journey */}
-            <div className="bg-gray-50 rounded-xl p-12 mb-20">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Founded on the belief that hospitality businesses thrive when operations, people, and systems work in harmony. We've built a reputation for delivering measurable results—from pre-opening turnarounds to sustainable operational improvements and effective team transformation.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Every engagement begins with a detailed assessment of your specific needs. We don't offer one-size-fits-all solutions; instead, we design bespoke strategies that align with your business goals, market position, and team capacity.
-              </p>
-            </div>
-
-            {/* Client Success Metrics */}
-            <div className="mt-20">
-              <h2 className="text-4xl font-bold text-gray-900 mb-12">Proven Results Across Our Engagements</h2>
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-8 border border-teal-200">
-                  <p className="text-4xl font-bold text-teal-600 mb-2">24%</p>
-                  <p className="font-semibold text-gray-900 mb-1">Average Revenue Growth</p>
-                  <p className="text-sm text-gray-600">Across consulting engagements</p>
-                </div>
-                <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-xl p-8 border border-emerald-200">
-                  <p className="text-4xl font-bold text-emerald-600 mb-2">35%</p>
-                  <p className="font-semibold text-gray-900 mb-1">Staff Retention Improvement</p>
-                  <p className="text-sm text-gray-600">Through training and development</p>
-                </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 border border-blue-200">
-                  <p className="text-4xl font-bold text-blue-600 mb-2">18%</p>
-                  <p className="font-semibold text-gray-900 mb-1">RevPAR Improvement</p>
-                  <p className="text-sm text-gray-600">Multi-unit portfolio optimisation</p>
-                </div>
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 border border-purple-200">
-                  <p className="text-4xl font-bold text-purple-600 mb-2">6/10</p>
-                  <p className="font-semibold text-gray-900 mb-1">Client Satisfaction</p>
-                  <p className="text-sm text-gray-600">Out of recent completed projects</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">What We Specialise In</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white border border-gray-200 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Consultancy</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Operational audits and gap analysis</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Standard Operating Procedures (SOP) development</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Pre-opening management and setup</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-white border border-gray-200 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Training</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Front-of-house and guest service excellence</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Housekeeping and facilities management</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Revenue management and leadership courses</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-white border border-gray-200 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Interim Management</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Acting General Manager placements</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Revenue and Operations Director support</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Crisis management and stabilisation</span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-white border border-gray-200 rounded-xl p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Audits & Compliance</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Health & safety support and readiness</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Hospitality regulatory compliance</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-teal-600 font-bold">•</span>
-                      <span>Standards certification and assessment</span>
-                    </li>
-                  </ul>
-                </div>
+              <div className="relative h-96 md:h-[520px] rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2025&auto=format&fit=crop"
+                  alt="Hotel management professionals at work"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Why Choose HMCTS */}
-        <section className="py-20 bg-teal-50">
+        {/* Mission Statement */}
+        <section className="py-16 bg-teal-500">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <p className="text-xs font-bold uppercase tracking-widest text-teal-100 mb-4">Our Mission</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-relaxed text-balance">
+              &ldquo;To empower independent hotel operators with technology that matches the quality and capability of the largest hotel groups — at a price and with the support that independent businesses can rely on.&rdquo;
+            </h2>
+          </div>
+        </section>
+
+        {/* Company Structure */}
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 max-w-7xl">
-            <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Why Hotels Choose HMCTS</h2>
-            
-            <div className="grid md:grid-cols-2 gap-12 mb-12">
-              <div className="bg-white rounded-xl p-8 border border-teal-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Operational Excellence</h3>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Proven systems</strong> that deliver consistent performance across all operational areas</span>
+            <div className="text-center mb-14">
+              <Badge className="mb-4 bg-teal-50 text-teal-700 border-teal-200 rounded-full">Our Structure</Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">US-incorporated, globally operational</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                HMCTS LLC is registered in the United States and maintains an active operational base in the United Kingdom.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <Building className="w-5 h-5 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">US Registration</h3>
+                </div>
+                <ul className="space-y-3 text-sm text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-teal-500 font-bold mt-0.5">—</span>
+                    <span><strong>Legal Name:</strong> HMCTS LLC</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Quality standards</strong> that protect your brand reputation and guest satisfaction</span>
+                  <li className="flex items-start gap-2">
+                    <span className="text-teal-500 font-bold mt-0.5">—</span>
+                    <span><strong>State of Incorporation:</strong> Delaware</span>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Risk mitigation</strong> through compliance support and H&S expertise</span>
+                  <li className="flex items-start gap-2">
+                    <span className="text-teal-500 font-bold mt-0.5">—</span>
+                    <span><strong>Authentication Number:</strong> 204421330</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-teal-500 font-bold mt-0.5">—</span>
+                    <span><strong>EIN:</strong> 37-2155102</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <MapPin className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                    <address className="not-italic">
+                      131 Continental Drive, Newark,<br />Delaware 19713, United States
+                    </address>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-teal-500 shrink-0" />
+                    <a href="tel:+13024696267" className="text-teal-600 hover:text-teal-700 transition-colors">
+                      +1 (302) 469-6267
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-teal-500 shrink-0" />
+                    <a href="mailto:info@hospitalitysoftwaresolutions.com" className="text-teal-600 hover:text-teal-700 transition-colors break-all">
+                      info@hospitalitysoftwaresolutions.com
+                    </a>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl p-8 border border-teal-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Financial Performance</h3>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Revenue uplift</strong> through optimised pricing, cost control, and market positioning</span>
+              <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center">
+                    <Globe className="w-5 h-5 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">UK Operations</h3>
+                </div>
+                <p className="text-sm text-gray-600 mb-5 leading-relaxed">
+                  HMCTS LLC maintains an active UK operational base and a UK-resident director. We are not registered as a UK company, but we operate in the UK market and hold a UK office address and telephone number.
+                </p>
+                <ul className="space-y-3 text-sm text-gray-700">
+                  <li className="flex items-start gap-2">
+                    <MapPin className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                    <address className="not-italic">
+                      84 Swinton Hall Road<br />
+                      Swinton, Manchester<br />
+                      M27 4BJ, United Kingdom<br />
+                      <span className="text-gray-500 text-xs">(UK Office — not a registered office)</span>
+                    </address>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Labour efficiency</strong> via better scheduling, training, and staff retention</span>
+                  <li className="flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-teal-500 shrink-0" />
+                    <a href="tel:+443333355520" className="text-teal-600 hover:text-teal-700 transition-colors">
+                      +44 (0)333 335 5520
+                    </a>
                   </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Measurable ROI</strong> on every consulting engagement with transparent reporting</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 border border-teal-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Team Development</h3>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Skilled teams</strong> equipped to execute your strategy and deliver service excellence</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Leadership depth</strong> through interim management and management coaching</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Cultural change</strong> that improves engagement and reduces costly turnover</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-white rounded-xl p-8 border border-teal-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Business Continuity</h3>
-                <ul className="space-y-4">
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Dedicated support</strong> during transitions, openings, or crisis situations</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Scalability planning</strong> for growing hotel groups and multi-unit operations</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="text-teal-600 font-bold">✓</span>
-                    <span className="text-gray-700"><strong>Long-term partnership</strong> with flexibility to adjust scope as your business evolves</span>
+                  <li className="flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-teal-500 shrink-0" />
+                    <a href="mailto:info@hospitalitysoftwaresolutions.com" className="text-teal-600 hover:text-teal-700 transition-colors break-all">
+                      info@hospitalitysoftwaresolutions.com
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="bg-white rounded-xl p-12 border-2 border-teal-300">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">The HMCTS Difference</h3>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                We don't parachute in with theoretical solutions. We embed ourselves in your operation, understand your unique challenges, and co-develop solutions with your team. Our consultants have lived in hotel environments—we understand occupancy pressures, seasonal volatility, staff constraints, and the real cost of operations.
+        {/* Leadership Team */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="text-center mb-14">
+              <Badge className="mb-4 bg-teal-50 text-teal-700 border-teal-200 rounded-full">Leadership</Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">The team behind HMCTS</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Our leadership brings decades of combined experience in hotel operations, hospitality technology, and business development across the US and UK markets.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Every engagement is about building capability in your team so you're never dependent on external support. We train, we mentor, and we leave your business stronger.
-              </p>
+            </div>
+
+            <div className="grid md:grid-cols-1 gap-10 max-w-2xl mx-auto">
+              {/* Thomas McHugh */}
+              <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                <div className="flex items-start gap-5 mb-5">
+                  <div className="w-16 h-16 bg-gray-800 rounded-xl flex items-center justify-center shrink-0">
+                    <span className="text-white font-bold text-xl">TM</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">Thomas McHugh</h3>
+                    <p className="text-teal-600 font-medium">Chief Executive Officer</p>
+                    <p className="text-sm text-gray-500 mt-0.5">UK-Resident Director</p>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 leading-relaxed mb-5">
+                  Thomas brings extensive experience in hospitality operations and technology implementation across independent hotel groups in the United Kingdom. With a background spanning hotel management and consultancy, he founded HMCTS to address the technology gap he observed firsthand during his operational career. Thomas serves as a UK-resident director of HMCTS LLC.
+                </p>
+                <a
+                  href="https://www.linkedin.com/in/thomas-mchugh-a0666527/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  View LinkedIn Profile
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Values */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="text-center mb-14">
+              <Badge className="mb-4 bg-teal-50 text-teal-700 border-teal-200 rounded-full">What We Stand For</Badge>
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Our values</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {values.map((value, index) => (
+                <div key={index} className="bg-white rounded-xl p-7 border border-gray-200 shadow-sm">
+                  <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center mb-4">
+                    <value.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-bold text-lg mb-3 text-gray-900">{value.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{value.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-teal-600 to-teal-700 text-white py-16">
-          <div className="container mx-auto px-4 max-w-7xl text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Operations?</h2>
-            <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
-              Let's discuss how HMCTS can support your hospitality business.
+        <section className="py-20 bg-gray-900 text-white">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 className="text-4xl font-bold mb-6">Ready to work with us?</h2>
+            <p className="text-xl text-gray-400 mb-10 leading-relaxed">
+              Book a demonstration and speak directly with our team about how HMCTS can work for your property.
             </p>
-            <Link href="/contact">
-              <Button className="bg-white text-teal-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold flex items-center gap-2 mx-auto">
-                Contact Us
-                <ArrowRight className="w-5 h-5" />
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Button asChild size="lg" className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg rounded-full">
+                <Link href="/contact">Request a Demo</Link>
               </Button>
-            </Link>
+              <Button asChild size="lg" variant="outline" className="border-2 border-gray-600 text-gray-300 hover:bg-gray-800 px-8 py-6 text-lg rounded-full bg-transparent">
+                <Link href="/platform">Explore the Platform</Link>
+              </Button>
+            </div>
           </div>
         </section>
       </main>
