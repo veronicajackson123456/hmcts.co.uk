@@ -156,8 +156,8 @@ export default function AboutPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <Phone className="w-4 h-4 text-teal-500 shrink-0" />
-                    <a href="tel:+13024696267" className="text-teal-600 hover:text-teal-700 transition-colors">
-                      +1 (302) 469-6267
+                    <a href="tel:+13025991401" className="text-teal-600 hover:text-teal-700 transition-colors">
+                      +1 (302) 599-1401
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
