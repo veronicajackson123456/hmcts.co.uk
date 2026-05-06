@@ -4,7 +4,7 @@ import { LegalLayout } from "@/components/legal-layout"
 export const metadata: Metadata = {
   title: "Disclaimer | HMCTS - Hospitality Software Solutions",
   description:
-    "Important disclaimers regarding the information and services provided by HMCTS.",
+    "Important disclaimers regarding the information and services provided by HMCTS LLC.",
 }
 
 const sections = [

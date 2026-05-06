@@ -60,7 +60,7 @@ export default function AcceptableUsePage() {
           <li>Connecting to OTA channels (such as Booking.com, Expedia, and Airbnb) via our channel management tools for the properties you operate or manage.</li>
           <li>Processing guest payments through integrated payment gateways for legitimate accommodation transactions.</li>
           <li>Generating reports and analytics to support the management and operation of your property.</li>
-          <li>Using the API to build integrations that connect HMCTS with other business tools used in your property operations, where such integrations are disclosed to and approved by HMCTS.</li>
+          <li>Using the API to build integrations that connect HMCTS with other business tools used in your property operations, where such integrations are disclosed to and approved by HMCTS LLC.</li>
           <li>Accessing the platform on behalf of authorised employees or contractors of your organisation.</li>
         </ul>
       </section>
